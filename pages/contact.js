@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react";
 import styles from "../styles/contact.module.css"
 import "bootstrap/dist/css/bootstrap.min.css";
+import { FiGithub ,FiTwitter , FiInstagram , FiLinkedin} from "react-icons/fi"
 
 const Contact = () => {
   const nameRef = useRef()
@@ -83,16 +84,19 @@ const Contact = () => {
             <hr />
             <ul className={styles.socialMediaList}>
               <li><a href="#" target="_blank" className="contact-icon">
-                <i aria-hidden="true"></i>
+              <FiGithub className={styles.icon}></FiGithub>
                 </a>
               </li>
-              <li><a href="#" target="_blank" className="contact-icon"></a>
+              <li><a href="#" target="_blank" className="contact-icon">
+                <FiTwitter className={styles.icon}></FiTwitter>
+              </a>
               </li>
               <li><a href="#" target="_blank" className="contact-icon">
-                <i className="fa fa-twitter" aria-hidden="true"></i></a>
+                <FiInstagram className={styles.icon}></FiInstagram>
+                </a>
               </li>
               <li><a href="#" target="_blank" className="contact-icon">
-                <i className="fa fa-instagram" aria-hidden="true"></i></a>
+                <FiLinkedin className={styles.icon}></FiLinkedin></a>
               </li>
             </ul>
             <hr />

@@ -272,3 +272,9 @@
     width: 99%;
   }
 }
+
+.icon {
+  margin-left: 20px;
+  margin-top: 20px;
+  scale: 1.5;
+}
