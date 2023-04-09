@@ -1,0 +1,16 @@
+{
+    "course1":{
+        "units": [
+            {
+                "unitID": 1,
+                "name": "Introduction",
+                "topics": ["", "", ""]
+            },
+            {
+
+            }
+        ],
+        "books": [{"name": "", "link": ""}],
+        "sources": [{"source": "", "link": ""}]
+    }
+}
