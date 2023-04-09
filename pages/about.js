@@ -17,7 +17,7 @@ const About = () => {
         </div>
       </div>
       <div className={styles.divider}></div>
-      <div className={styles.name}>Prathmesh Chhabra</div>
+      <div className={styles.name}><a href="https://www.linkedin.com/in/prathmesh-chhabra-51760719b/">Prathmesh Chhabra</a></div>
     </div>
       </li>
       <li>
@@ -28,7 +28,7 @@ const About = () => {
         </div>
       </div>
       <div className={styles.divider}></div>
-      <div className={styles.name}>Aditya Tiwari</div>
+      <div className={styles.name}><a href="https://www.linkedin.com/in/aditya-tiwari-438087203/">Aditya Tiwari</a></div>
     </div>
       </li>
       <li>
@@ -39,7 +39,7 @@ const About = () => {
         </div>
       </div>
       <div className={styles.divider}></div>
-      <div className={styles.name}>Jayant Saini</div>
+      <div className={styles.name}><a href="https://www.linkedin.com/in/jayant-saini-59803123a/">Jayant Saini</a></div>
     </div>
       </li>
       <li>
@@ -50,7 +50,7 @@ const About = () => {
         </div>
       </div>
       <div className={styles.divider}></div>
-      <div className={styles.name}>Aaditya Gagneja</div>
+      <div className={styles.name}><a href="https://www.linkedin.com/in/aaditya-gagneja-b727a0203/">Aaditya Gagneja</a></div>
     </div>
       </li>
     </ul>

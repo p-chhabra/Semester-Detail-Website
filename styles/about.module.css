@@ -18,6 +18,7 @@
     -webkit-text-fill-color: transparent;
 }
 .person {
+  margin-top: -100px;
   align-items: center;
   display: flex;
   flex-direction: column;
