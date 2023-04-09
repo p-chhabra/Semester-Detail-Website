@@ -1,16 +1,192 @@
 {
     "course1":{
+        "name":"Analysis and Design of Algorithms",
+        "courseCode":"CS311",
         "units": [
             {
                 "unitID": 1,
-                "name": "Introduction",
-                "topics": ["", "", ""]
+                "name": "Algorithms Introduction",
+                "topics": ["Algorithm Design paradigms- motivation", "Algorithm Design paradigms- motivation", "run time analysis of algorithms","Asymptotic Notations"]
             },
             {
-
+                "unitID": 2,
+                "name": "Divide and Conquer Approach",
+                "topics": ["Structure of divide-and-conquer algorithms","sets and disjoint sets: Union and Find algorithms", "quick sort", "Finding the maximum and minimum", "Quick Sort", "Merge sort", "Heap and heap sort"]
+            },
+            {
+                "unitID": 3,
+                "name": "Greedy Algorithms",
+                "topics": ["Optimal storage on tapes", "Knapsack problem", "Job sequencing with deadlines", "Minimum Spanning trees: Prim's algorithm and Kruskal's algorithm", "Huffman codes"]
+            },
+            {
+                "unitID": 4,
+                "name": "Graph Algorithms",
+                "topics": ["Representation of graphs", "BFS", "DFS", "Topological sort", "strongly connected components", "single source shortest paths: Bellmen-Ford algorithm", "Dijkstra's algorithm", "All pairs shortest path: The Warshall's algorithm"]
+            },
+            {
+                "unitID": 5,
+                "name": "Dynamic Programming and Backtracking",
+                "topics": ["Overview, difference between dynamic programming and divide and conquer", "Matrix chain multiplication", "Traveling salesman Problem, longest Common sequence", "0/1 knapsack"," 8-Queen Problem", "Sum of subsets", "graph coloring", "Hamiltonian cycles"]
+            },
+            {
+                "unitID": 6,
+                "name": "Branch Bound and Computational Complexity",
+                "topics": ["LC searching Bounding, FIFO branch and bound", "LC branch and bound application: 0/1 Knapsack problem", "Traveling Salesman Problem","Complexity measures", "Polynomial vs. nonpolynomial time complexity", "NP-hard and NP-complete classes", "examples"]
             }
         ],
-        "books": [{"name": "", "link": ""}],
+        "books": [{"name": "Fundamentals of Computer Algorithms by E. Horowitz and S. Sahni, Galgotia"},{"name":"Introduction to Algorithms by Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest and Clifford Stein, MIT Press, Cambridge"}],
         "sources": [{"source": "", "link": ""}]
+    },
+    "course2":{
+        "name":"Data Base Management Systems",
+        "courseCode":"CS312",
+        "units": [
+            {
+                "unitID": 1,
+                "name": "Basic Concepts",
+                "topics": ["Introduction to File and Database systems- Database system structure -concepts and architecture, date models", "schemas & instances", "DBMS architecture & data independence", "database languages & interfaces, Data Model, ER model"]
+            },
+            {
+                "unitID": 2,
+                "name": "Relational Models",
+                "topics": ["SQL - Data definition- Queries in SQL-relational model concepts", "relational model constraints", "relational algebra", "SQL- a relational database language: date definition in SQL", "view and queries in SQL", "specifying constraints and indexes in SQL; relational database management systems-Updates", "Views, Integrity and Security, Relational Database design", "Functional dependences and Normalization for Relational Databases", "normal forms based on primary keys", "(1NF, 2NF, 3NF & BCNF)", "lossless join and dependency preserving decomposition", "converting ER-diagrams into relations"]
+            },
+            {
+                "unitID": 3,
+                "name": "Data Storage and query Processing",
+                "topics": ["Record storage and Primary file organization- Secondary storage Devices", "Operations on Files", "Heap File", "Sorted Files", "Hashing Techniques", "Index Structure for files", "Different types of Indexes- B-Tree - B+Tree", "Query Processing"]
+            },
+            {
+                "unitID": 4,
+                "name": "Transaction Management",
+                "topics": ["Transaction Processing", "Need for Concurrency control, Desirable properties of Transaction", "Schedule and Recoverability", "Serializability and Schedules, Concurrency Control", "Types of Locks", "Two Phases locking", "Deadlock", "Time stamp based concurrency control" , "Recovery Techniques", "Concepts- Immediate Update- Deferred Update", "Shadow Paging"]
+            },
+            {
+                "unitID": 5,
+                "name": "Current Trends",
+                "topics": ["Introduction to Distributed and parallel databases", "Deductive Databases", 
+                "Multimedia Databases", "Real-Time Databases"]
+            }
+        ],
+        "books": [{"name": "Database System Concepts by Abraham Silberschatz, Henry F. Korth and S. Sudarshan, McGraw-Hill"},{"name":"Fundamental Database Systems by Ramez Elmasri and Shamkant B. Navathe, Pearson Education"}],
+        "sources": [{"source": "", "link": ""}]
+    },
+    "course3":{
+        "name":"Compiler Design",
+        "courseCode":"CS313",
+        "units": [
+            {
+                "unitID": 1,
+                "name": "Introduction to Compilers",
+                "topics": ["Compiler and translators need of translators", "structure of a compiler","lexical analysis", "syntax Analysis. Basic Parsing Techniques: Parsers shift-reduce parsing", "predictive parsing"]
+            },
+            {
+                "unitID": 2,
+                "name": "Automatic Construction of Efficient Parsers",
+                "topics": ["LR parsers, canonical collection of LR(0) items", "construction canonical LR parsing tables", "construction LALR and SLR parsing tables using ambiguous grammars", "an automatic parser generator", "implementation of LR parsing tables", 
+                "construction LALR sets of items"]
+            },
+            {
+                "unitID": 3,
+                "name": "Syntax-Directed Translation",
+                "topics": ["Syntax directed translation schemes", "implementation of syntax directed translation", "intermediate code, postfix notation parse trees and syntax trees", "three address code, quadruples and triples", "translation of assignment statements", "postfix translation with top down parser"]
+            },
+            {
+                "unitID": 4,
+                "name": "Symbol Tables",
+                "topics": ["Contents of a table, data structures for symbol tables","representing scope information","Error detection and recovery: Errors", "lexical-phase errors", "syntax-phase errors", "semantic errors"]
+            },
+            {
+                "unitID": 5,
+                "name": "Introduction to Code optimization",
+                "topics": ["The principal source of optimization", "loop optimization", "DAG representation of basic blocks", "value numbers and algebraic laws, global data flow analysis", "Code Generation: Object programs", "problems in code generation", "machine model", 
+                "simple code generator", "register allocation and assignment", "code generation from DAG's", "peephole optimization"]
+            }
+        ],
+        "books": [{"name": "Compilers Principles, Techniques and Tools by Alfred V. Aho, Monica S. Lam, Ravi Sethi and Jeffrey D Ullman, Pearson Education"},{"name":"Compiler Design in C by Allen I. Holub, Prentice Hall of India"}],
+        "sources": [{"source": "", "link": ""}]
+    },
+    "course4":{
+        "name":"Computer Graphics",
+        "courseCode":"CS314",
+        "units": [
+            {
+                "unitID": 1,
+                "name": "Introduction to Computer Graphics",
+                "topics": ["Overview of Graphics Systems", "Display Devices", "Hard copy Devices", "Interactive Input Devices", "Display Processors", "The Graphical Kernel System", "Output Primitives", "Graphics hardware: Display technology", "random scan", "raster scan display processing", "graphics software and standards"]
+            },
+            {
+                "unitID": 2,
+                "name": "Raster Scan Graphics",
+                "topics": ["LR parsers, canonical collection of LR(0) items", "construction canonical LR parsing tables", "construction LALR and SLR parsing tables using ambiguous grammars", "an automatic parser generator", "implementation of LR parsing tables", 
+                "construction LALR sets of items"]
+            },
+            {
+                "unitID": 3,
+                "name": "Two-Dimensional Geometric Transformation & Viewing",
+                "topics": ["Points, lines, circles and ellipses as primitives", "scan conversion algorithms for primitives", "Fill area primitives including scan-line polygon filling", "inside-outside test", "boundary and flood-fill", "character generation", "line attributes", "area-fill attributes", "character attributers", "antialiasing"]
+            },
+            {
+                "unitID": 4,
+                "name": "Three- Dimensional Concepts & Object Representations",
+                "topics": ["Three Dimensional Display Methods", "Parallel Projection", "Perspective Projection", "Translation", "Rotation", "Scaling", "Composite Transformation", "Three dimensional Transformation function", "Polygon Surfaces", "Curved Lines and surfaces", "Bezier Curves and surfaces", "B-Spline Curves and surfaces"]
+            },
+            {
+                "unitID": 5,
+                "name": "Visible Lines and Visible Surfaces",
+                "topics": [": Visual Realism, Hidden line and hidden surface removal: depth buffer algorithm, geometric computations", "scan line coherence algorithms", "area coherence algorithms", "priority algorithm", "visible surface detection concepts", "back-face detection", "depth buffer method", "light sources", "illumination methods (ambient, diffuse reflection, specular reflection)", "shading", "Color models: properties of light, XYZ, RGB, YIQ and CMY color models", "modeling methods", "Transparency", "Refraction effects in transparent materials", "Simple Transparency Models", "Shadows", "Texture"]
+            }
+        ],
+        "books": [{"name": "Procedural Elements for Computer Graphics by D.F. Rogers, McGraw Hill"},{"name":"Mathematical Elements for Computer Graphics by D.F. Rogers, McGraw Hil"}],
+        "sources": [{"source": "", "link": ""}]
+    },
+    "course5":{
+        "name":"Data Base Management Systems Lab",
+        "courseCode":"CS315",
+        "experiments":["Online Examination System",
+        "Development of Online Course Portal for the Campus",
+        "Student Attendance Management System",
+        "Student Information System",
+        "Student Result Alert System",
+        "Time Table Management System",
+        "Examination Date Sheet Management System",
+        "Supplementary Examination Registration System",
+        "Training and Placement Cell Management",
+        "Hostel Allotment System",
+        "Campus Network Complaint System",
+        "Hospital Management System",
+        "Civil/Electrical Works Repair Information System"]
+    },
+    "course6":{
+        "name":"Compiler Design Lab",
+        "courseCode":"CS316",
+        "experiments":["Write a C/C++ program to search the number of occurrences of any word", "string and sub sequence in a given string","Write a C/C++ program to find the number of occurrences of any word in a file and replace that with another word",
+        "Implement the lexical analyzer using JLex, Flex or other lexical analyzer generating tools and write the following program using LEX",
+        "Program to count the number of characters, words, spaces and lines in a given input file",
+        "Program to count the number of comment lines in a given C program. Also eliminate them and copy the resulting program into separate file",
+        "Program to recognize a valid arithmetic expression and to recognize the identifiers and operators present", "Print them separately","Program to recognize and count the number of identifiers in a given input file",
+        "Write a program to check whether a string belongs to the grammar or not. Write a program to generate a parse tree","Write a program to check whether a grammar is left recursive and left factoring", "Write a program to remove left recursion and left factoring","Write a program to implementation FIRST and FOLLOW for the given grammar",
+        "Write a program to implementation to implement recursive-Descent and Non-recursive Predictive parser",
+        "Write a program to check whether a given grammar is LL (1) or not", 
+        "Write a C/C+ + program to implementation of shift reduce parsing Algorithm",
+        "Write a C/C++ program to construct i) LR Parsing table and Implement LR parsing algorithm, ii) CLR Parsing table and implement CLR parsing algorithm, iii) LALR Parsing table and implement LALR parsing algorithm",
+        "YACC program to recognize i) a valid arithmetic expression that uses operators +, -,* and /, ii) strings 'aabb','abbb', 'ab' and 'a' using the grammar",
+        "Write a C program to implement i) the syntax-directed definition of “if E then S1” and “if E then S1 else S2”, ii) a Symbol Table with function to create, insert, modify, search and display"]
+    },
+    "course7":{
+        "name":"Computer Graphics Lab",
+        "courseCode":"CS317",
+        "experiments":["Program to implement DDA algorithms for line", 
+        "Program to implement Bresenham’s algorithms for line, circle and ellipse drawing",
+        "Program to implement Mid Point Circle algorithm",
+        "Program to implement Mid Point Ellipse algorithm",
+        "Program to perform 2D Transformations such as translation, rotation, scaling, reflection and sharing",
+        "Program to implement Cohen–Sutherland 2D clipping and window–viewport mapping", 
+        "Program to implement Liang Barsky Line Clipping Algorithm", 
+        "Program to perform 3D Transformations such as translation, rotation and scaling", 
+        "Program for conversion between color models", 
+        "Program to perform animation using any Animation software", 
+        "Program to perform basic operations on image using any image editing software", 
+        "Program to draw different shapes such as hut, face, kite, fish etc"]
     }
 }
