@@ -6,7 +6,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <Navbar />
-      <main className="bg-[#121212] h-screen flex flex-col items-center p-10">
+      <main className="bg-[#121212] h-screen text-center pt-10">
         {children}
       </main>
       <Footer />
