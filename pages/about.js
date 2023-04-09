@@ -50,7 +50,7 @@ const About = () => {
         </div>
       </div>
       <div className={styles.divider}></div>
-      <div className={styles.name}>Aaditya Gagenja</div>
+      <div className={styles.name}>Aaditya Gagneja</div>
     </div>
       </li>
     </ul>
