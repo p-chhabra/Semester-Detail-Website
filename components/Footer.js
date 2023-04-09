@@ -7,8 +7,10 @@ const Footer = () => {
   return (
     <>
       <footer>
-        <div class={styles.footer}>
-          <div class={`${styles.row} flex flex-row justify-center space-x-10`}>
+        <div className={styles.footer}>
+          <div
+            className={`${styles.row} flex flex-row justify-center space-x-10`}
+          >
             <a href="#">
               <i className="hover:text-[#BB86FC]">
                 <FiGithub />
@@ -31,7 +33,7 @@ const Footer = () => {
             </a>
           </div>
 
-          <div class={styles.row}>
+          <div className={styles.row}>
             <ul>
               <li>
                 <Link href="/contact">Contact us</Link>
@@ -51,7 +53,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div class={styles.row}>
+          <div className={styles.row}>
             Copyright © 2023 All rights reserved || Designed By: Prathmesh
             Chhabra | Aaditya Gagneja | Aditya Tiwari | Jayant Saini
           </div>
