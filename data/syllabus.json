@@ -11,6 +11,6 @@
             }
         ],
         "books": [{"name": "", "link": ""}],
-        "sources": []
+        "sources": [{"source": "", "link": ""}]
     }
 }
