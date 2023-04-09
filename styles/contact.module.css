@@ -84,6 +84,7 @@
   margin-top: 10px;
   font: 700 12px "Lato", sans-serif;
   letter-spacing: 2px;
+  font-size: 1em;
 }
 
 .altSendButton:hover {
@@ -277,4 +278,9 @@
   margin-left: 20px;
   margin-top: 20px;
   scale: 1.5;
+}
+
+.sendIcon {
+  margin-left: 185px;
+  scale: 1.3;
 }

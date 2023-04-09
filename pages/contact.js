@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 import styles from "../styles/contact.module.css"
 import "bootstrap/dist/css/bootstrap.min.css";
-import { FiGithub ,FiTwitter , FiInstagram , FiLinkedin} from "react-icons/fi"
+import { FiGithub ,FiTwitter , FiInstagram , FiLinkedin , FiMessageSquare} from "react-icons/fi"
 
 const Contact = () => {
   const nameRef = useRef()
@@ -61,7 +61,7 @@ const Contact = () => {
 
             <button className={`btn btn-primary ${styles.sendButton}`} id="submit" type="submit" value="SEND">
               <div className={styles.altSendButton}>
-                <i className="fa fa-paper-plane"></i><span className={styles.sendText}>SEND</span>
+               <FiMessageSquare className={styles.sendIcon}></FiMessageSquare> <span className={styles.sendText}>SEND</span>
               </div>
 
             </button>
