@@ -2,6 +2,7 @@
     "course1":{
         "name":"Analysis and Design of Algorithms",
         "courseCode":"CS311",
+        "type":"Theory",
         "units": [
             {
                 "unitID": 1,
@@ -35,11 +36,12 @@
             }
         ],
         "books": [{"name": "Fundamentals of Computer Algorithms by E. Horowitz and S. Sahni, Galgotia"},{"name":"Introduction to Algorithms by Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest and Clifford Stein, MIT Press, Cambridge"}],
-        "sources": [{"source": "", "link": ""}]
+        "sources": [{"source": "NPTEL-IITM", "link": "https://www.youtube.com/playlist?list=PLyqSpQzTE6M9DKhN7z2fOpKTJWu-639_P"}]
     },
     "course2":{
         "name":"Data Base Management Systems",
         "courseCode":"CS312",
+        "type":"Theory",
         "units": [
             {
                 "unitID": 1,
@@ -69,11 +71,12 @@
             }
         ],
         "books": [{"name": "Database System Concepts by Abraham Silberschatz, Henry F. Korth and S. Sudarshan, McGraw-Hill"},{"name":"Fundamental Database Systems by Ramez Elmasri and Shamkant B. Navathe, Pearson Education"}],
-        "sources": [{"source": "", "link": ""}]
+        "sources": [{"source": "Knowledge Gate", "link": "https://www.youtube.com/playlist?list=PLmXKhU9FNesR1rSES7oLdJaNFgmuj0SYV"}]
     },
     "course3":{
         "name":"Compiler Design",
         "courseCode":"CS313",
+        "type":"Theory",
         "units": [
             {
                 "unitID": 1,
@@ -104,11 +107,12 @@
             }
         ],
         "books": [{"name": "Compilers Principles, Techniques and Tools by Alfred V. Aho, Monica S. Lam, Ravi Sethi and Jeffrey D Ullman, Pearson Education"},{"name":"Compiler Design in C by Allen I. Holub, Prentice Hall of India"}],
-        "sources": [{"source": "", "link": ""}]
+        "sources": [{"source": "Gate Smashers", "link": "https://www.youtube.com/playlist?list=PLxCzCOWd7aiEKtKSIHYusizkESC42diyc"}]
     },
     "course4":{
         "name":"Computer Graphics",
         "courseCode":"CS314",
+        "type":"Theory",
         "units": [
             {
                 "unitID": 1,
@@ -134,15 +138,16 @@
             {
                 "unitID": 5,
                 "name": "Visible Lines and Visible Surfaces",
-                "topics": [": Visual Realism, Hidden line and hidden surface removal: depth buffer algorithm, geometric computations", "scan line coherence algorithms", "area coherence algorithms", "priority algorithm", "visible surface detection concepts", "back-face detection", "depth buffer method", "light sources", "illumination methods (ambient, diffuse reflection, specular reflection)", "shading", "Color models: properties of light, XYZ, RGB, YIQ and CMY color models", "modeling methods", "Transparency", "Refraction effects in transparent materials", "Simple Transparency Models", "Shadows", "Texture"]
+                "topics": ["Visual Realism, Hidden line and hidden surface removal: depth buffer algorithm, geometric computations", "scan line coherence algorithms", "area coherence algorithms", "priority algorithm", "visible surface detection concepts", "back-face detection", "depth buffer method", "light sources", "illumination methods (ambient, diffuse reflection, specular reflection)", "shading", "Color models: properties of light, XYZ, RGB, YIQ and CMY color models", "modeling methods", "Transparency", "Refraction effects in transparent materials", "Simple Transparency Models", "Shadows", "Texture"]
             }
         ],
         "books": [{"name": "Procedural Elements for Computer Graphics by D.F. Rogers, McGraw Hill"},{"name":"Mathematical Elements for Computer Graphics by D.F. Rogers, McGraw Hil"}],
-        "sources": [{"source": "", "link": ""}]
+        "sources": [{"source": "NPTEL-IIT Guwahati", "link": "https://www.youtube.com/playlist?list=PLwdnzlV3ogoWaYiowRtJ8t8FeR-ODfSV1"}]
     },
     "course5":{
         "name":"Data Base Management Systems Lab",
         "courseCode":"CS315",
+        "type":"Lab",
         "experiments":["Online Examination System",
         "Development of Online Course Portal for the Campus",
         "Student Attendance Management System",
@@ -160,6 +165,7 @@
     "course6":{
         "name":"Compiler Design Lab",
         "courseCode":"CS316",
+        "type":"Lab",
         "experiments":["Write a C/C++ program to search the number of occurrences of any word", "string and sub sequence in a given string","Write a C/C++ program to find the number of occurrences of any word in a file and replace that with another word",
         "Implement the lexical analyzer using JLex, Flex or other lexical analyzer generating tools and write the following program using LEX",
         "Program to count the number of characters, words, spaces and lines in a given input file",
@@ -176,6 +182,7 @@
     "course7":{
         "name":"Computer Graphics Lab",
         "courseCode":"CS317",
+        "type":"Lab",
         "experiments":["Program to implement DDA algorithms for line", 
         "Program to implement Bresenham's algorithms for line, circle and ellipse drawing",
         "Program to implement Mid Point Circle algorithm",
