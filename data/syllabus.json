@@ -37,7 +37,11 @@
             }
         ],
         "books": [{"name": "Fundamentals of Computer Algorithms by E. Horowitz and S. Sahni, Galgotia"},{"name":"Introduction to Algorithms by Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest and Clifford Stein, MIT Press, Cambridge"}],
-        "sources": [{"source": "NPTEL-IITM", "link": "https://www.youtube.com/playlist?list=PLyqSpQzTE6M9DKhN7z2fOpKTJWu-639_P"}]
+        "sources": [{"source": "NPTEL-IITM", "link": "https://www.youtube.com/playlist?list=PLyqSpQzTE6M9DKhN7z2fOpKTJWu-639_P"}],
+        "relevance":{
+            "Placement":5,
+            "Competetive Exams":5
+        }
     },
     "course2":{
         "name":"Data Base Management Systems",
@@ -73,7 +77,11 @@
             }
         ],
         "books": [{"name": "Database System Concepts by Abraham Silberschatz, Henry F. Korth and S. Sudarshan, McGraw-Hill"},{"name":"Fundamental Database Systems by Ramez Elmasri and Shamkant B. Navathe, Pearson Education"}],
-        "sources": [{"source": "Knowledge Gate", "link": "https://www.youtube.com/playlist?list=PLmXKhU9FNesR1rSES7oLdJaNFgmuj0SYV"}]
+        "sources": [{"source": "Knowledge Gate", "link": "https://www.youtube.com/playlist?list=PLmXKhU9FNesR1rSES7oLdJaNFgmuj0SYV"}],
+        "relevance":{
+            "Placement":5,
+            "Competetive Exams":5
+        }
     },
     "course3":{
         "name":"Compiler Design",
@@ -110,7 +118,11 @@
             }
         ],
         "books": [{"name": "Compilers Principles, Techniques and Tools by Alfred V. Aho, Monica S. Lam, Ravi Sethi and Jeffrey D Ullman, Pearson Education"},{"name":"Compiler Design in C by Allen I. Holub, Prentice Hall of India"}],
-        "sources": [{"source": "Gate Smashers", "link": "https://www.youtube.com/playlist?list=PLxCzCOWd7aiEKtKSIHYusizkESC42diyc"}]
+        "sources": [{"source": "Gate Smashers", "link": "https://www.youtube.com/playlist?list=PLxCzCOWd7aiEKtKSIHYusizkESC42diyc"}],
+        "relevance":{
+            "Placement":2,
+            "Competetive Exams":5
+        }
     },
     "course4":{
         "name":"Computer Graphics",
@@ -146,7 +158,11 @@
             }
         ],
         "books": [{"name": "Procedural Elements for Computer Graphics by D.F. Rogers, McGraw Hill"},{"name":"Mathematical Elements for Computer Graphics by D.F. Rogers, McGraw Hil"}],
-        "sources": [{"source": "NPTEL-IIT Guwahati", "link": "https://www.youtube.com/playlist?list=PLwdnzlV3ogoWaYiowRtJ8t8FeR-ODfSV1"}]
+        "sources": [{"source": "NPTEL-IIT Guwahati", "link": "https://www.youtube.com/playlist?list=PLwdnzlV3ogoWaYiowRtJ8t8FeR-ODfSV1"}],
+        "relevance":{
+            "Placement":3,
+            "Competetive Exams":0
+        }
     },
     "course5":{
         "name":"Data Base Management Systems Lab",
