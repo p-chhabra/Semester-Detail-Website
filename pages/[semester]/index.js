@@ -1,6 +1,6 @@
 import React from "react";
 import { useRouter } from "next/router";
-import styles from "../../styles/courses.module.css"
+import styles from "../../styles/courses.module.css";
 import CourseCard from "../../components/coursesCard";
 
 const DUMMY_DATA = [
@@ -24,26 +24,33 @@ const DUMMY_DATA = [
     name: "Total Quality Management",
     code: "CS-315",
   },
-]
+];
 
 const Semester = () => {
   const router = useRouter();
   const semesterID = router.query.semester;
   console.log(semesterID);
   return (
-    <React.Fragment>
-      <div className="text-2xl">Semester {semesterID}</div>
+    <div className="h-screen">
       <div className={styles.body}>
-        <h1>Courses</h1>
-        <ol className={`${styles.olCards} ${styles.alternate}`} >
+        <h1 className="text-4xl text-gray-300 mt-8 mb-5 font-bold">
+          Semester {semesterID}
+        </h1>
+        <ol className={`${styles.olCards} ${styles.alternate}`}>
           {/* kya subjectHeading */}
-          {DUMMY_DATA.map(data => {
-            return <CourseCard key={data.code} code={data.code} name={data.name}></CourseCard>
+          {DUMMY_DATA.map((data) => {
+            return (
+              <CourseCard
+                key={data.code}
+                code={data.code}
+                name={data.name}
+              ></CourseCard>
+            );
           })}
           {/* kya subjectHeading */}
         </ol>
       </div>
-    </React.Fragment>
+    </div>
   );
 };
 

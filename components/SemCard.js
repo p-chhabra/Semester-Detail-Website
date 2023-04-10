@@ -8,10 +8,10 @@ const SemCard = ({ id, desc }) => {
       <div className={styles.text}>
         <h3 className={styles.h3}>🏠 Semester {id}</h3>
 
-        <p className={styles.content}>
+        <div className={styles.content}>
           <p className={styles.credits}>Total Credits : 26</p>
           <p className={styles.credits}>Total Subjects : 8</p>
-        </p>
+        </div>
         <Link href={`./${id}`}>
           <button href="" className={styles.btn}>
             Show Courses
