@@ -93,5 +93,106 @@ html{
   }
 
 
-
-
+  .tabs {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
+    max-width: 100%;
+  }
+  
+  .tabs > *:not(:last-child) {
+    border-bottom: 1px solid var(--primary-text-color);
+  }
+  
+  .tab {
+    width: 60%;
+    margin-left: 20rem;
+    color: var(--primary-color);
+    overflow: hidden;
+  }
+  .h1{
+    font-size: 2.2em;
+    font-family: "Sumana", serif;
+    margin-bottom: 0px;
+    background: linear-gradient(to right , #BB86FC, #121212);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  p{
+    font-color: #BB86FC;
+  
+  }
+  .tab-label {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    background: var(--primary-color);
+    color: #FFFFFF;
+    font-size: 1.3em;
+    cursor: pointer;
+  }
+  
+  .tab-label:hover,
+  .tab-label:focus {
+    background: var(--secondary-color);
+    /* color: var(--primary-text-color); */
+  }
+  .tab-label::after {
+    content: "❯";
+    width: 1em;
+    height: 1em;
+    text-align: center;
+    transition: all 0.35s;
+  }
+  .tab-content {
+    max-height: 0;
+    padding: 0 1em;
+  
+    color: var(--secondary-color);
+    background-color: var(--primary-text-color);
+    transition: all 0.35s;
+  }
+  
+  .tab-content > * {
+    margin: 0;
+    /* padding: 0; */
+    width: fit-content;
+  }
+  
+  /* .tab-content > ul > li {
+    padding: 0;
+    width: fit-content;
+  } */
+  
+  .tab-close {
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+    /* width: 10%; */
+    font-size: 1em;
+    background: var(--secondary-color);
+    color: var(--primary-text-color);
+    cursor: pointer;
+    margin-bottom: 45rem;
+  }
+  .tab-close:hover,
+  .tab-close:focus {
+    background: var(--secondary-color);
+    color: var(--primary-text-color);
+  }
+  
+  input:checked + .tab-label {
+    background: var(--secondary-color);
+    color: var(--primary-text-color);
+  }
+  input:checked + .tab-label::after {
+    transform: rotate(90deg);
+  }
+  input:checked ~ .tab-content {
+    max-height: 100vh;
+    padding: 1em;
+  }
+  
+  /* Background Styles Only */
+  
