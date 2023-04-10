@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "../styles/semcard.module.css";
+import Link from "next/link";
 
 const SemCard = ({ id, desc }) => {
   return (
@@ -11,9 +12,11 @@ const SemCard = ({ id, desc }) => {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
-        <button href="" className={styles.btn}>
-          Show Courses
-        </button>
+        <Link href={`./${id}`}>
+          <button href="" className={styles.btn}>
+            Show Courses
+          </button>
+        </Link>
       </div>
     </article>
   );

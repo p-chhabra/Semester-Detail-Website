@@ -19,7 +19,6 @@ const Contact = () => {
   const [textValue, setTextValue] = useState("");
 
   const submitHandler = (event) => {
-    event.preventDefault();
     console.log(nameValue, emailValue, textValue);
 
     nameRef.current.value = "";
@@ -48,6 +47,8 @@ const Contact = () => {
           {/* <!-- Left contact page --> */}
 
           <form
+            action="https://getform.io/f/635ebe76-d0d8-4bb5-8146-bec64904b396"
+            method="POST"
             onSubmit={submitHandler}
             id="contact-form"
             className={styles.formHorizontal}
