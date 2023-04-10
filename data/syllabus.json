@@ -3,6 +3,7 @@
         "name":"Analysis and Design of Algorithms",
         "courseCode":"CS311",
         "type":"Theory",
+        "credits":4,
         "units": [
             {
                 "unitID": 1,
@@ -42,6 +43,7 @@
         "name":"Data Base Management Systems",
         "courseCode":"CS312",
         "type":"Theory",
+        "credits":4,
         "units": [
             {
                 "unitID": 1,
@@ -75,6 +77,7 @@
     },
     "course3":{
         "name":"Compiler Design",
+        "credits":4,
         "courseCode":"CS313",
         "type":"Theory",
         "units": [
@@ -113,6 +116,7 @@
         "name":"Computer Graphics",
         "courseCode":"CS314",
         "type":"Theory",
+        "credits":3,
         "units": [
             {
                 "unitID": 1,
@@ -148,6 +152,7 @@
         "name":"Data Base Management Systems Lab",
         "courseCode":"CS315",
         "type":"Lab",
+        "credits":1,
         "experiments":["Online Examination System",
         "Development of Online Course Portal for the Campus",
         "Student Attendance Management System",
@@ -166,6 +171,7 @@
         "name":"Compiler Design Lab",
         "courseCode":"CS316",
         "type":"Lab",
+        "credits":1,
         "experiments":["Write a C/C++ program to search the number of occurrences of any word", "string and sub sequence in a given string","Write a C/C++ program to find the number of occurrences of any word in a file and replace that with another word",
         "Implement the lexical analyzer using JLex, Flex or other lexical analyzer generating tools and write the following program using LEX",
         "Program to count the number of characters, words, spaces and lines in a given input file",
@@ -183,6 +189,7 @@
         "name":"Computer Graphics Lab",
         "courseCode":"CS317",
         "type":"Lab",
+        "credits":1,
         "experiments":["Program to implement DDA algorithms for line", 
         "Program to implement Bresenham's algorithms for line, circle and ellipse drawing",
         "Program to implement Mid Point Circle algorithm",
