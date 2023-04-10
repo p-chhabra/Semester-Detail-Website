@@ -5,22 +5,27 @@ import CourseCard from "../../components/coursesCard";
 
 const DUMMY_DATA = [
   {
+    id: 1,
     name: "Distributed",
     code: "CS-311",
   },
   {
+    id: 2,
     name: "Computer Networks",
     code: "CS-312",
   },
   {
+    id: 3,
     name: "Sofrware Engineering",
     code: "CS-313",
   },
   {
+    id: 4,
     name: "Digital Image Processing",
     code: "CS-314",
   },
   {
+    id: 5,
     name: "Total Quality Management",
     code: "CS-315",
   },
@@ -41,7 +46,9 @@ const Semester = () => {
           {DUMMY_DATA.map((data) => {
             return (
               <CourseCard
-                key={data.code}
+                key={data.id}
+                id={semesterID}
+                courseID={data.id}
                 code={data.code}
                 name={data.name}
               ></CourseCard>

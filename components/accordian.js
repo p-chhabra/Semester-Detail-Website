@@ -2,51 +2,51 @@ import { Fragment } from "react";
 function Accordian() {
   return (
     <Fragment>
-        <h1 className="h1">Analysis and Design of Algorithms</h1>
-        <p>Syllabus</p>
-         <div className="flex flex-row justify-center items-center">
-        <div class="tabs">
-          <div class="tab">
+      <h1 className="h1">Analysis and Design of Algorithms</h1>
+      <p>Syllabus</p>
+      <div className="flex flex-row justify-center items-center">
+        <div className="tabs">
+          <div className="tab">
             <input
               className="hidden"
               type="checkbox"
               id="heading-checkbox-1"
               name="heading-checkbox-1"
             />
-            <label class="tab-label" for="heading-checkbox-1">
-            Algorithms Introduction
+            <label className="tab-label" htmlFor="heading-checkbox-1">
+              Algorithms Introduction
             </label>
-            <div class="tab-content">
+            <div className="tab-content">
               Some data! Lorem ipsum dolor sit amet consectetur, adipisicing
               elit. Ipsum, reiciendis!
             </div>
           </div>
-          <div class="tab">
+          <div className="tab">
             <input
               className="hidden"
               type="checkbox"
               id="heading-checkbox-2"
               name="heading-checkbox-2"
             />
-            <label class="tab-label" for="heading-checkbox-2">
-            Divide and Conquer Approach
+            <label className="tab-label" htmlFor="heading-checkbox-2">
+              Divide and Conquer Approach
             </label>
-            <div class="tab-content">
+            <div className="tab-content">
               Some data again!! Lorem ipsum dolor sit amet consectetur,
               adipisicing elit. Ipsum, reiciendis!
             </div>
           </div>
-          <div class="tab">
+          <div className="tab">
             <input
               className="hidden"
               type="checkbox"
               id="heading-checkbox-3"
               name="heading-checkbox-3"
             />
-            <label class="tab-label" for="heading-checkbox-3">
-            Greedy Algorithms
+            <label className="tab-label" htmlFor="heading-checkbox-3">
+              Greedy Algorithms
             </label>
-            <div class="tab-content">
+            <div className="tab-content">
               Lots of data! Lorem ipsum dolor sit amet consectetur, adipisicing
               elit. Ipsum, reiciendis! Lorem ipsum dolor sit amet consectetur
               adipisicing elit. Quas culpa architecto veniam facere distinctio
@@ -57,18 +57,18 @@ function Accordian() {
               nostrum! Nostrum, aut!
             </div>
           </div>
-          <div class="tab">
+          <div className="tab">
             <input
               className="hidden"
               type="checkbox"
               id="heading-checkbox-4"
               name="heading-checkbox-4"
             />
-            <label class="tab-label" for="heading-checkbox-4">
-            Graph Algorithms
+            <label className="tab-label" htmlFor="heading-checkbox-4">
+              Graph Algorithms
             </label>
-            <div class="tab-content">
-            Dynamic Programming and Backtracking
+            <div className="tab-content">
+              Dynamic Programming and Backtracking
               <ul>
                 <li>item 1</li>
                 <li>item 2</li>
@@ -78,7 +78,7 @@ function Accordian() {
             </div>
           </div>
         </div>
-        </div>
+      </div>
     </Fragment>
   );
 }
