@@ -1,0 +1,74 @@
+.box {
+  background-color: #121212;
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  padding: 50px;
+  width: 1400px;
+}
+
+.body {
+  background-color: #632aad;
+  justify-content: center;
+  display: flex;
+  padding-top: 40px;
+  font-family: "Roboto", sans-serif;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap");
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  grid-gap: 50px;
+}
+
+.grid > article {
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 6px 0px rgba(187, 163, 206, 1);
+  background-color: #00000065;
+  padding: 10% 0;
+  border-radius: 20px;
+}
+
+.text {
+  padding: 10px 30px 0px 30px;
+  color: #808285;
+  margin-bottom: 20px;
+}
+
+.btn {
+  margin-top: 60px;
+  background-color: #bb86fc;
+  border: 0;
+  border-radius: 5px;
+  color: #000;
+  font-size: 15px;
+  padding: 5px 10px 5px 10px;
+  line-height: 1.5;
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #632aaa;
+  transition-duration: 300ms;
+  color: white;
+}
+
+.h3 {
+  color: #bb86fc;
+  text-align: center;
+  font-size: large;
+  padding-bottom: 10px;
+}
+
+
+.content {
+  margin: 2em 0;
+}
+
+.credits{
+  margin-bottom: 1em;
+  font-weight: bold;
+  color: white;
+}

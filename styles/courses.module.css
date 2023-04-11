@@ -1,0 +1,204 @@
+@import url("https://use.fontawesome.com/releases/v5.15.3/css/all.css");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+.body {
+  --color-bg: #f0f0f0;
+  --color-text: #303030;
+  background-color: rgb(18, 18, 18);
+  color: var(--color-text);
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.olCards,
+.olCards *,
+.olCards *::before,
+.olCards *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.olCards {
+  --ol-cards-color-bg: var(--color-bg);
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 45em;
+  padding: 2em;
+  gap: 2em;
+  counter-reset: ol-cards-counter;
+}
+
+.olCards li {
+  display: grid;
+  grid-template-areas:
+    "step title"
+    "step content";
+  padding: 1em 2em 1em 0;
+  row-gap: 0.5em;
+  column-gap: 2em;
+  box-shadow: 0.5em 0.5em 1em rgba(0, 0, 0, 0.4),
+    inset 0.05em 0.05em rgba(255, 255, 255, 1);
+  counter-increment: ol-cards-counter;
+  text-align: left;
+  background-color: var(--ol-cards-color-bg);
+  border-radius: 10px;
+  background-color: #15131300;
+  padding-bottom: 2em;
+}
+
+.lists {
+  color: white;
+  transition: all 0.4s;
+  position: relative;
+}
+
+.lists:hover {
+  transform: translateY(-5px);
+  border-bottom: 2px solid #bb86fc;
+}
+
+/* .olCards.alternate li:nth-child(even) {
+  grid-template-areas:
+    "title step"
+    "content step";
+  padding: 1em 0 1em 2em;
+} */
+
+.olCards li .step {
+  grid-area: step;
+  display: flex;
+  align-self: flex-start;
+  background-color: var(--ol-cards-color-accent);
+  border-radius: 0 50em 50em 0;
+  padding: 1em;
+  justify-content: flex-end;
+  box-shadow: inset 0.25em 0.25em 0.5em rgba(0, 0, 0, 0.4),
+    0em 0.05em rgba(255, 255, 255, 1);
+  flex: 1;
+  gap: 1em;
+  width: 7em;
+  background-color: #bb86fc;
+}
+
+.olCards li .step::before {
+  /* content: "0" counter(ol-cards-counter); */
+  flex: 1;
+  align-self: center;
+  color: var(--ol-cards-color-bg);
+  font-weight: bold;
+  font-size: 2em;
+  text-shadow: 0.025em 0.025em 0.125em rgba(0, 0, 0, 0.4);
+}
+/* .olCards.alternate li:nth-child(even) .step {
+  border-radius: 50em 0 0 50em;
+  flex-direction: row-reverse;
+} */
+
+.olCards li .step i {
+  color: var(--ol-cards-color-accent);
+  width: 2em;
+  height: 2em;
+  font-size: 1.8em;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background-color: var(--ol-cards-color-bg);
+  box-shadow: 0.25em 0.25em 0.5em rgba(0, 0, 0, 0.4),
+    inset 0.05em 0.05em rgba(255, 255, 255, 1);
+}
+
+.olCards li .title {
+  grid-area: title;
+  color: var(--ol-cards-color-accent);
+  font-weight: bold;
+  color: white;
+}
+.olCards li .content {
+  grid-area: content;
+  font-size: 0.9em;
+}
+
+@media only screen and (max-width: 500px) {
+  .olCards {
+    padding: 1em;
+  }
+  .olCards li {
+    column-gap: 0em;
+    grid-template-areas:
+      "step title"
+      "content content";
+    grid-template-columns: min-content auto;
+    padding: 1em 0em;
+  }
+  .olCards.alternate li:nth-child(even) {
+    column-gap: 0em;
+    grid-template-areas:
+      "title step"
+      "content content";
+    grid-template-columns: auto min-content;
+    padding: 1em 0em;
+  }
+  .olCards li .title {
+    padding: 0 1em;
+    align-self: center;
+    width: auto;
+  }
+  .olCards li .step {
+    font-size: 0.5em;
+  }
+  .olCards li .content {
+    padding: 0 1em;
+  }
+}
+
+.button {
+  background-color: #bb86fc;
+  width: 15em;
+  border-radius: 5px;
+  height: 2em;
+}
+
+.button:hover {
+  background-color:  #632aaa;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: -20em;
+}
+
+.subjectHeading {
+  font-weight: bold;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.subjectName {
+  font-size: 1.3em;
+  margin-left: 20px;
+}
+
+.credits{
+
+  width: 50%;
+  text-align: center;
+  height: 100%;
+  
+}
+
+.container2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: flex-end;
+  position: absolute;
+  right: 2em;
+  top: 70px;
+  gap: 5em;
+}

@@ -1,0 +1,289 @@
+.body {
+  margin: 0;
+  padding: 0;
+  background-color: #121212;
+  padding-bottom: 100px;
+}
+
+
+
+.contact {
+  width: 100%;
+  height: 80vh;
+}
+
+.sectionHeader {
+  text-align: center;
+  margin: 0 auto;
+  padding: 40px 0;
+  font: 300 60px "Oswald", sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+}
+
+.contactWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+  max-width: 840px;
+}
+
+/* Left contact page */
+.formHorizontal {
+  /*float: left;*/
+  max-width: 400px;
+  font-family: "Lato";
+  font-weight: 400;
+}
+
+.formControl {
+  display: block;
+  width: 100%;
+  margin-bottom: 15px ;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.formControl,
+.textarea {
+  max-width: 400px;
+  background-color: #000;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.textarea {
+  height: 200px;
+}
+
+.sendButton {
+  margin-top: 15px;
+  height: 34px;
+  width: 400px;
+  overflow: hidden;
+  transition: all 0.2s ease-in-out;
+  background-color: #BB86FF;
+}
+
+.altSendButton {
+  width: 400px;
+  height: 34px;
+  transition: all 0.2s ease-in-out;
+}
+
+.sendText {
+  display: block;
+  margin-top: 10px;
+  font: 700 12px "Lato", sans-serif;
+  letter-spacing: 2px;
+  font-size: 1em;
+}
+
+.altSendButton:hover {
+  transform: translate3d(0px, -29px, 0px);
+}
+
+/* Begin Right Contact Page */
+.directContactContainer {
+  max-width: 400px;
+}
+
+/* Location, Phone, Email Section */
+.contactList {
+  list-style-type: none;
+  margin-left: -30px;
+  padding-right: 20px;
+}
+
+.listItem {
+  line-height: 4;
+  color: #aaa;
+}
+
+.contactText {
+  font: 300 18px "Lato", sans-serif;
+  letter-spacing: 1.9px;
+  color: #bbb;
+}
+
+.place {
+  margin-left: 62px;
+}
+
+.phone {
+  margin-left: 56px;
+}
+
+.gmail {
+  margin-left: 53px;
+}
+
+.contactText a {
+  color: #bbb;
+  text-decoration: none;
+  transition-duration: 0.2s;
+}
+
+.contactText a:hover {
+  color: #BB86FF;
+  text-decoration: none;
+}
+
+/* Social Media Icons */
+.socialMediaList {
+  position: relative;
+  font-size: 22px;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.socialMediaList li a {
+  color: #fff;
+}
+
+.socialMediaList li {
+  position: relative;
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  margin: 10px 3px;
+  line-height: 60px;
+  border-radius: 50%;
+  color: #fff;
+  background-color: rgb(27, 27, 27);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.socialMediaList li:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  border-radius: 50%;
+  opacity: 0;
+  box-shadow: 0 0 0 1px #fff;
+  transition: all 0.2s ease-in-out;
+}
+
+.socialMediaList li:hover {
+  background-color: #BB86FF;
+}
+
+.socialMediaList li:hover:after {
+  opacity: 1;
+  transform: scale(1.12);
+  transition-timing-function: cubic-bezier(0.37, 0.74, 0.15, 1.65);
+}
+
+.socialMediaList li:hover a {
+  color: #000;
+}
+
+.copyright {
+  font: 200 14px "Oswald", sans-serif;
+  color: #555;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+/* hr {
+  border-color: rgba(255, 255, 255, 0.6);
+} */
+
+/* Begin Media Queries*/
+@media screen and (max-width: 850px) {
+  .contact-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .direct-contact-container,
+  .form-horizontal {
+    margin: 0 auto;
+  }
+
+  .direct-contact-container {
+    margin-top: 60px;
+    max-width: 300px;
+  }
+  .socialMediaList li {
+    height: 60px;
+    width: 60px;
+    line-height: 60px;
+  }
+  .socialMediaList li:after {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+  }
+}
+
+@media screen and (max-width: 569px) {
+  .direct-contact-container,
+  .form-wrapper {
+    float: none;
+    margin: 0 auto;
+  }
+  .formControl,
+  .textarea {
+    margin: 0 auto;
+  }
+
+  .name,
+  .email,
+  .textarea {
+    width: 280px;
+  }
+
+  .direct-contact-container {
+    margin-top: 60px;
+    max-width: 280px;
+  }
+  .socialMediaList {
+    left: 0;
+  }
+  .socialMediaList li {
+    height: 55px;
+    width: 55px;
+    line-height: 55px;
+    font-size: 2rem;
+  }
+  .socialMediaList li:after {
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .sendButton {
+    width: 99%;
+  }
+}
+
+.icon {
+  margin-left: 20px;
+  margin-top: 20px;
+  scale: 1.5;
+}
+
+.sendIcon {
+  margin-left: 185px;
+  scale: 1.3;
+}
