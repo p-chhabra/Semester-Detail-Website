@@ -63,17 +63,24 @@ const Course = ({ course }) => {
 
 export default Course;
 
-export async function getStaticPaths(context) {
-  console.log(context);
-  // const paths = semData.semesters[semID].courses.map((course) => {
-  //   return {
-  //     params: {
-  //       course: course.courseID.toString(),
-  //     },
-  //   };
-  // });
+export async function getStaticPaths() {
+  const sems = semData.semesters;
+
+  const paths = [];
+  sems.forEach((sem) => {
+    let semID = sem.semID;
+    sem.courses.forEach((course) => {
+      paths.push({
+        params: {
+          semester: semID.toString(),
+          course: course.courseID.toString(),
+        },
+      });
+    });
+  });
+
   return {
-    paths: [{ params: { semester: "1", course: "1" } }],
+    paths,
     fallback: false,
   };
 }

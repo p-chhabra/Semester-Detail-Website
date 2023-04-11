@@ -3,7 +3,6 @@ function Accordian() {
   return (
     <Fragment>
       <h1 className="h1">Analysis and Design of Algorithms</h1>
-      <p>Syllabus</p>
       <div className="flex flex-row justify-center items-center">
         <div className="tabs">
           <div className="tab">
