@@ -9,6 +9,8 @@ const Course = () => {
   const semID = router.query.semester;
   return (
     <Fragment>
+      <h1 className="h1">{courseID}</h1>
+      <p>Syllabus</p>
       <Accordian></Accordian>
       <div className={styles.collapsecontent}>
         <div className={styles.collapse} id="instagram">
