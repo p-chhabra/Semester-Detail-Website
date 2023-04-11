@@ -106,15 +106,15 @@ html {
 
 .wrap {
   border-bottom: 1px solid var(--primary-text-color);
+  text-align: center;
 }
 
 .tab {
-  width: 60%;
-  margin-left: 10rem;
+  width: 40rem;
   margin-bottom: 1rem;
   color: var(--primary-color);
   overflow: hidden;
-  background-color: #122b40;
+  background-color: #736b6b38;
 }
 .h1 {
   font-size: 3.2em;

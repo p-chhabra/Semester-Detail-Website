@@ -12,11 +12,14 @@
     width: 50vw;
     margin-left: 30rem ;
     margin-top: 7rem;
+    padding-bottom: 5rem;
     /* box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75); */
   }
 
   .collapse {
-    background: #121212;
+    background: #5e5a5a38;
+    border-width: 1px;
+    border-color: #fff;
   }
   
   .collapse a {
@@ -57,6 +60,7 @@
   
   .innercontent {
     padding: 1.8rem;
+    padding-bottom: 3rem;
   }
   
   .content {
@@ -79,6 +83,10 @@
   
   .collapse:target a:before {
     transform: rotate(-90deg);
+  }
+
+  .innercontent a{
+    text-decoration: none;
   }
   
   @media (max-width: 768px) {

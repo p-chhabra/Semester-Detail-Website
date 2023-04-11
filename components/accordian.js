@@ -1,6 +1,7 @@
 import { Fragment } from "react";
 function Accordian(props) {
-  const { item } = props;
+  const { item, topics, name } = props;
+  let i = 0;
   return (
     <>
       <div className="wrap">
@@ -17,11 +18,18 @@ function Accordian(props) {
                 className="tab-label"
                 htmlFor={`heading-checkbox-` + `${item}`}
               >
-                Algorithms Introduction
+                {name}
               </label>
               <div className="tab-content">
-                Some data! Lorem ipsum dolor sit amet consectetur, adipisicing
-                elit. Ipsum, reiciendis!
+                <div className="text-left">
+                  {topics.map((topic) => {
+                    return (
+                      <p key={++i} className="m-3">
+                        {topic}
+                      </p>
+                    );
+                  })}
+                </div>
               </div>
             </div>
           </div>
