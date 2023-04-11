@@ -2,16 +2,17 @@
     "semesters": [
         {
             "semID": 1,
-            "credits": 22,
-            "meanSG": 8,
-            "medianSG": 9,
+            "meanSG": 8.456,
+            "medianSG": 8.67,
             "maxSG": 9.95,
-            "minSG": 5.5,
+            "minSG": 5.95,
+            "credits":24,
             "courses":[
                 {
                     "courseID": 1,
                     "name":"Analysis and Design of Algorithms",
                     "courseCode":"CS311",
+                    "type":"theory",
                     "units": [
                         {
                             "unitID": 1,
@@ -45,21 +46,22 @@
                         }
                     ],
                     "books": [{"name": "Fundamentals of Computer Algorithms by E. Horowitz and S. Sahni, Galgotia"},{"name":"Introduction to Algorithms by Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest and Clifford Stein, MIT Press, Cambridge"}],
-                    "sources": [{"source": "", "link": ""}],
-                    "credits": 2,
-                    "meanSG": 8,
-                    "medianSG":9,
+                    "sources": [{"source": "NPTEL-IITM", "link": "https://www.youtube.com/playlist?list=PLyqSpQzTE6M9DKhN7z2fOpKTJWu-639_P"}],
+                    "credits": 4,
+                    "meanSG": 7.191,
+                    "medianSG":8,
                     "maxSG":10,
-                    "minSG": 5,
+                    "minSG": 0,
                     "relevance": {
                         "placement": 4,
-                        "compitetive": 1
+                        "compitetive": 4
                     }
                 },
                 {
                     "courseID": 2,
                     "name":"Data Base Management Systems",
                     "courseCode":"CS312",
+                    "type":"theory",
                     "units": [
                         {
                             "unitID": 1,
@@ -89,12 +91,22 @@
                         }
                     ],
                     "books": [{"name": "Database System Concepts by Abraham Silberschatz, Henry F. Korth and S. Sudarshan, McGraw-Hill"},{"name":"Fundamental Database Systems by Ramez Elmasri and Shamkant B. Navathe, Pearson Education"}],
-                    "sources": [{"source": "", "link": ""}]
+                    "sources": [{"source": "Knowledge Gate", "link": "https://www.youtube.com/playlist?list=PLmXKhU9FNesR1rSES7oLdJaNFgmuj0SYV"}],
+                    "credits": 4,
+                    "meanSG": 8.561,
+                    "medianSG":9,
+                    "maxSG":10,
+                    "minSG": 0,
+                    "relevance": {
+                        "placement": 4,
+                        "compitetive": 4
+                    }
                 },
                 {
                     "courseID": 3,
                     "name":"Compiler Design",
                     "courseCode":"CS313",
+                    "type":"theory",
                     "units": [
                         {
                             "unitID": 1,
@@ -125,12 +137,22 @@
                         }
                     ],
                     "books": [{"name": "Compilers Principles, Techniques and Tools by Alfred V. Aho, Monica S. Lam, Ravi Sethi and Jeffrey D Ullman, Pearson Education"},{"name":"Compiler Design in C by Allen I. Holub, Prentice Hall of India"}],
-                    "sources": [{"source": "", "link": ""}]
+                    "sources": [{"source": "Gate Smashers", "link": "https://www.youtube.com/playlist?list=PLxCzCOWd7aiEKtKSIHYusizkESC42diyc"}],
+                    "credits": 4,
+                    "meanSG": 8.863,
+                    "medianSG":9,
+                    "maxSG":10,
+                    "minSG":7,
+                    "relevance": {
+                        "placement": 2,
+                        "compitetive": 4
+                    }
                 },
                 {
                     "courseID": 4,
                     "name":"Computer Graphics",
                     "courseCode":"CS314",
+                    "type":"theory",
                     "units": [
                         {
                             "unitID": 1,
@@ -160,12 +182,22 @@
                         }
                     ],
                     "books": [{"name": "Procedural Elements for Computer Graphics by D.F. Rogers, McGraw Hill"},{"name":"Mathematical Elements for Computer Graphics by D.F. Rogers, McGraw Hil"}],
-                    "sources": [{"source": "", "link": ""}]
+                    "sources": [{"source": "NPTEL-IIT Guwahati", "link": "https://www.youtube.com/playlist?list=PLwdnzlV3ogoWaYiowRtJ8t8FeR-ODfSV1"}],
+                    "credits": 4,
+                    "meanSG": 8.452,
+                    "medianSG":9,
+                    "maxSG":10,
+                    "minSG": 5,
+                    "relevance": {
+                        "placement": 3,
+                        "compitetive": 0
+                    }
                 },
                 {
                     "courseID": 5,
                     "name":"Data Base Management Systems Lab",
                     "courseCode":"CS315",
+                    "type":"lab",
                     "experiments":["Online Examination System",
                     "Development of Online Course Portal for the Campus",
                     "Student Attendance Management System",
@@ -178,11 +210,17 @@
                     "Hostel Allotment System",
                     "Campus Network Complaint System",
                     "Hospital Management System",
-                    "Civil/Electrical Works Repair Information System"]
+                    "Civil/Electrical Works Repair Information System"],
+                    "credits": 1,
+                    "meanSG": 9.616,
+                    "medianSG":10,
+                    "maxSG":10,
+                    "minSG": 8
                 },
                 {
                     "courseID": 6,
                     "name":"Compiler Design Lab",
+                    "type":"lab",
                     "courseCode":"CS316",
                     "experiments":["Write a C/C++ program to search the number of occurrences of any word", "string and sub sequence in a given string","Write a C/C++ program to find the number of occurrences of any word in a file and replace that with another word",
                     "Implement the lexical analyzer using JLex, Flex or other lexical analyzer generating tools and write the following program using LEX",
@@ -195,12 +233,18 @@
                     "Write a C/C+ + program to implementation of shift reduce parsing Algorithm",
                     "Write a C/C++ program to construct i) LR Parsing table and Implement LR parsing algorithm, ii) CLR Parsing table and implement CLR parsing algorithm, iii) LALR Parsing table and implement LALR parsing algorithm",
                     "YACC program to recognize i) a valid arithmetic expression that uses operators +, -,* and /, ii) strings 'aabb','abbb', 'ab' and 'a' using the grammar",
-                    "Write a C program to implement i) the syntax-directed definition of “if E then S1” and “if E then S1 else S2”, ii) a Symbol Table with function to create, insert, modify, search and display"]
+                    "Write a C program to implement i) the syntax-directed definition of “if E then S1” and “if E then S1 else S2”, ii) a Symbol Table with function to create, insert, modify, search and display"],
+                    "credits": 1,
+                    "meanSG": 9.383,
+                    "medianSG":9,
+                    "maxSG":10,
+                    "minSG": 8
                 },
                 {
                     "courseID": 7,
                     "name":"Computer Graphics Lab",
                     "courseCode":"CS317",
+                    "type":"lab",
                     "experiments":["Program to implement DDA algorithms for line", 
                     "Program to implement Bresenham's algorithms for line, circle and ellipse drawing",
                     "Program to implement Mid Point Circle algorithm",
@@ -212,7 +256,12 @@
                     "Program for conversion between color models", 
                     "Program to perform animation using any Animation software", 
                     "Program to perform basic operations on image using any image editing software", 
-                    "Program to draw different shapes such as hut, face, kite, fish etc"]
+                    "Program to draw different shapes such as hut, face, kite, fish etc"],
+                    "credits": 1,
+                    "meanSG": 9.315,
+                    "medianSG":9,
+                    "maxSG":10,
+                    "minSG": 7
                 }
             ]
             
@@ -220,16 +269,17 @@
 
         {
             "semID": 2,
-            "credits": 22,
-            "meanSG": 8,
-            "medianSG": 9,
+            "meanSG": 8.456,
+            "medianSG": 8.67,
             "maxSG": 9.95,
-            "minSG": 5.5,
+            "minSG": 5.95,
+            "credits":24,
             "courses":[
                 {
                     "courseID": 1,
                     "name":"Analysis and Design of Algorithms",
                     "courseCode":"CS311",
+                    "type":"theory",
                     "units": [
                         {
                             "unitID": 1,
@@ -263,21 +313,22 @@
                         }
                     ],
                     "books": [{"name": "Fundamentals of Computer Algorithms by E. Horowitz and S. Sahni, Galgotia"},{"name":"Introduction to Algorithms by Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest and Clifford Stein, MIT Press, Cambridge"}],
-                    "sources": [{"source": "", "link": ""}],
-                    "credits": 2,
-                    "meanSG": 8,
-                    "medianSG":9,
+                    "sources": [{"source": "NPTEL-IITM", "link": "https://www.youtube.com/playlist?list=PLyqSpQzTE6M9DKhN7z2fOpKTJWu-639_P"}],
+                    "credits": 4,
+                    "meanSG": 7.191,
+                    "medianSG":8,
                     "maxSG":10,
-                    "minSG": 5,
+                    "minSG": 0,
                     "relevance": {
                         "placement": 4,
-                        "compitetive": 1
+                        "compitetive": 4
                     }
                 },
                 {
                     "courseID": 2,
                     "name":"Data Base Management Systems",
                     "courseCode":"CS312",
+                    "type":"theory",
                     "units": [
                         {
                             "unitID": 1,
@@ -307,12 +358,22 @@
                         }
                     ],
                     "books": [{"name": "Database System Concepts by Abraham Silberschatz, Henry F. Korth and S. Sudarshan, McGraw-Hill"},{"name":"Fundamental Database Systems by Ramez Elmasri and Shamkant B. Navathe, Pearson Education"}],
-                    "sources": [{"source": "", "link": ""}]
+                    "sources": [{"source": "Knowledge Gate", "link": "https://www.youtube.com/playlist?list=PLmXKhU9FNesR1rSES7oLdJaNFgmuj0SYV"}],
+                    "credits": 4,
+                    "meanSG": 8.561,
+                    "medianSG":9,
+                    "maxSG":10,
+                    "minSG": 0,
+                    "relevance": {
+                        "placement": 4,
+                        "compitetive": 4
+                    }
                 },
                 {
                     "courseID": 3,
                     "name":"Compiler Design",
                     "courseCode":"CS313",
+                    "type":"theory",
                     "units": [
                         {
                             "unitID": 1,
@@ -343,12 +404,22 @@
                         }
                     ],
                     "books": [{"name": "Compilers Principles, Techniques and Tools by Alfred V. Aho, Monica S. Lam, Ravi Sethi and Jeffrey D Ullman, Pearson Education"},{"name":"Compiler Design in C by Allen I. Holub, Prentice Hall of India"}],
-                    "sources": [{"source": "", "link": ""}]
+                    "sources": [{"source": "Gate Smashers", "link": "https://www.youtube.com/playlist?list=PLxCzCOWd7aiEKtKSIHYusizkESC42diyc"}],
+                    "credits": 4,
+                    "meanSG": 8.863,
+                    "medianSG":9,
+                    "maxSG":10,
+                    "minSG":7,
+                    "relevance": {
+                        "placement": 2,
+                        "compitetive": 4
+                    }
                 },
                 {
                     "courseID": 4,
                     "name":"Computer Graphics",
                     "courseCode":"CS314",
+                    "type":"theory",
                     "units": [
                         {
                             "unitID": 1,
@@ -378,12 +449,22 @@
                         }
                     ],
                     "books": [{"name": "Procedural Elements for Computer Graphics by D.F. Rogers, McGraw Hill"},{"name":"Mathematical Elements for Computer Graphics by D.F. Rogers, McGraw Hil"}],
-                    "sources": [{"source": "", "link": ""}]
+                    "sources": [{"source": "NPTEL-IIT Guwahati", "link": "https://www.youtube.com/playlist?list=PLwdnzlV3ogoWaYiowRtJ8t8FeR-ODfSV1"}],
+                    "credits": 4,
+                    "meanSG": 8.452,
+                    "medianSG":9,
+                    "maxSG":10,
+                    "minSG": 5,
+                    "relevance": {
+                        "placement": 3,
+                        "compitetive": 0
+                    }
                 },
                 {
                     "courseID": 5,
                     "name":"Data Base Management Systems Lab",
                     "courseCode":"CS315",
+                    "type":"lab",
                     "experiments":["Online Examination System",
                     "Development of Online Course Portal for the Campus",
                     "Student Attendance Management System",
@@ -396,11 +477,17 @@
                     "Hostel Allotment System",
                     "Campus Network Complaint System",
                     "Hospital Management System",
-                    "Civil/Electrical Works Repair Information System"]
+                    "Civil/Electrical Works Repair Information System"],
+                    "credits": 1,
+                    "meanSG": 9.616,
+                    "medianSG":10,
+                    "maxSG":10,
+                    "minSG": 8
                 },
                 {
                     "courseID": 6,
                     "name":"Compiler Design Lab",
+                    "type":"lab",
                     "courseCode":"CS316",
                     "experiments":["Write a C/C++ program to search the number of occurrences of any word", "string and sub sequence in a given string","Write a C/C++ program to find the number of occurrences of any word in a file and replace that with another word",
                     "Implement the lexical analyzer using JLex, Flex or other lexical analyzer generating tools and write the following program using LEX",
@@ -413,12 +500,18 @@
                     "Write a C/C+ + program to implementation of shift reduce parsing Algorithm",
                     "Write a C/C++ program to construct i) LR Parsing table and Implement LR parsing algorithm, ii) CLR Parsing table and implement CLR parsing algorithm, iii) LALR Parsing table and implement LALR parsing algorithm",
                     "YACC program to recognize i) a valid arithmetic expression that uses operators +, -,* and /, ii) strings 'aabb','abbb', 'ab' and 'a' using the grammar",
-                    "Write a C program to implement i) the syntax-directed definition of “if E then S1” and “if E then S1 else S2”, ii) a Symbol Table with function to create, insert, modify, search and display"]
+                    "Write a C program to implement i) the syntax-directed definition of “if E then S1” and “if E then S1 else S2”, ii) a Symbol Table with function to create, insert, modify, search and display"],
+                    "credits": 1,
+                    "meanSG": 9.383,
+                    "medianSG":9,
+                    "maxSG":10,
+                    "minSG": 8
                 },
                 {
                     "courseID": 7,
                     "name":"Computer Graphics Lab",
                     "courseCode":"CS317",
+                    "type":"lab",
                     "experiments":["Program to implement DDA algorithms for line", 
                     "Program to implement Bresenham's algorithms for line, circle and ellipse drawing",
                     "Program to implement Mid Point Circle algorithm",
@@ -430,7 +523,12 @@
                     "Program for conversion between color models", 
                     "Program to perform animation using any Animation software", 
                     "Program to perform basic operations on image using any image editing software", 
-                    "Program to draw different shapes such as hut, face, kite, fish etc"]
+                    "Program to draw different shapes such as hut, face, kite, fish etc"],
+                    "credits": 1,
+                    "meanSG": 9.315,
+                    "medianSG":9,
+                    "maxSG":10,
+                    "minSG": 7
                 }
             ]
             
@@ -438,16 +536,17 @@
 
         {
             "semID": 3,
-            "credits": 22,
-            "meanSG": 8,
-            "medianSG": 9,
+            "meanSG": 8.456,
+            "medianSG": 8.67,
             "maxSG": 9.95,
-            "minSG": 5.5,
+            "minSG": 5.95,
+            "credits":22,
             "courses":[
                 {
                     "courseID": 1,
                     "name":"Analysis and Design of Algorithms",
                     "courseCode":"CS311",
+                    "type":"theory",
                     "units": [
                         {
                             "unitID": 1,
@@ -481,21 +580,22 @@
                         }
                     ],
                     "books": [{"name": "Fundamentals of Computer Algorithms by E. Horowitz and S. Sahni, Galgotia"},{"name":"Introduction to Algorithms by Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest and Clifford Stein, MIT Press, Cambridge"}],
-                    "sources": [{"source": "", "link": ""}],
-                    "credits": 2,
-                    "meanSG": 8,
-                    "medianSG":9,
+                    "sources": [{"source": "NPTEL-IITM", "link": "https://www.youtube.com/playlist?list=PLyqSpQzTE6M9DKhN7z2fOpKTJWu-639_P"}],
+                    "credits": 4,
+                    "meanSG": 7.191,
+                    "medianSG":8,
                     "maxSG":10,
-                    "minSG": 5,
+                    "minSG": 0,
                     "relevance": {
                         "placement": 4,
-                        "compitetive": 1
+                        "compitetive": 4
                     }
                 },
                 {
                     "courseID": 2,
                     "name":"Data Base Management Systems",
                     "courseCode":"CS312",
+                    "type":"theory",
                     "units": [
                         {
                             "unitID": 1,
@@ -525,12 +625,22 @@
                         }
                     ],
                     "books": [{"name": "Database System Concepts by Abraham Silberschatz, Henry F. Korth and S. Sudarshan, McGraw-Hill"},{"name":"Fundamental Database Systems by Ramez Elmasri and Shamkant B. Navathe, Pearson Education"}],
-                    "sources": [{"source": "", "link": ""}]
+                    "sources": [{"source": "Knowledge Gate", "link": "https://www.youtube.com/playlist?list=PLmXKhU9FNesR1rSES7oLdJaNFgmuj0SYV"}],
+                    "credits": 4,
+                    "meanSG": 8.561,
+                    "medianSG":9,
+                    "maxSG":10,
+                    "minSG": 0,
+                    "relevance": {
+                        "placement": 4,
+                        "compitetive": 4
+                    }
                 },
                 {
                     "courseID": 3,
                     "name":"Compiler Design",
                     "courseCode":"CS313",
+                    "type":"theory",
                     "units": [
                         {
                             "unitID": 1,
@@ -561,12 +671,22 @@
                         }
                     ],
                     "books": [{"name": "Compilers Principles, Techniques and Tools by Alfred V. Aho, Monica S. Lam, Ravi Sethi and Jeffrey D Ullman, Pearson Education"},{"name":"Compiler Design in C by Allen I. Holub, Prentice Hall of India"}],
-                    "sources": [{"source": "", "link": ""}]
+                    "sources": [{"source": "Gate Smashers", "link": "https://www.youtube.com/playlist?list=PLxCzCOWd7aiEKtKSIHYusizkESC42diyc"}],
+                    "credits": 4,
+                    "meanSG": 8.863,
+                    "medianSG":9,
+                    "maxSG":10,
+                    "minSG":7,
+                    "relevance": {
+                        "placement": 2,
+                        "compitetive": 4
+                    }
                 },
                 {
                     "courseID": 4,
                     "name":"Computer Graphics",
                     "courseCode":"CS314",
+                    "type":"theory",
                     "units": [
                         {
                             "unitID": 1,
@@ -596,12 +716,22 @@
                         }
                     ],
                     "books": [{"name": "Procedural Elements for Computer Graphics by D.F. Rogers, McGraw Hill"},{"name":"Mathematical Elements for Computer Graphics by D.F. Rogers, McGraw Hil"}],
-                    "sources": [{"source": "", "link": ""}]
+                    "sources": [{"source": "NPTEL-IIT Guwahati", "link": "https://www.youtube.com/playlist?list=PLwdnzlV3ogoWaYiowRtJ8t8FeR-ODfSV1"}],
+                    "credits": 4,
+                    "meanSG": 8.452,
+                    "medianSG":9,
+                    "maxSG":10,
+                    "minSG": 5,
+                    "relevance": {
+                        "placement": 3,
+                        "compitetive": 0
+                    }
                 },
                 {
                     "courseID": 5,
                     "name":"Data Base Management Systems Lab",
                     "courseCode":"CS315",
+                    "type":"lab",
                     "experiments":["Online Examination System",
                     "Development of Online Course Portal for the Campus",
                     "Student Attendance Management System",
@@ -614,11 +744,17 @@
                     "Hostel Allotment System",
                     "Campus Network Complaint System",
                     "Hospital Management System",
-                    "Civil/Electrical Works Repair Information System"]
+                    "Civil/Electrical Works Repair Information System"],
+                    "credits": 1,
+                    "meanSG": 9.616,
+                    "medianSG":10,
+                    "maxSG":10,
+                    "minSG": 8
                 },
                 {
                     "courseID": 6,
                     "name":"Compiler Design Lab",
+                    "type":"lab",
                     "courseCode":"CS316",
                     "experiments":["Write a C/C++ program to search the number of occurrences of any word", "string and sub sequence in a given string","Write a C/C++ program to find the number of occurrences of any word in a file and replace that with another word",
                     "Implement the lexical analyzer using JLex, Flex or other lexical analyzer generating tools and write the following program using LEX",
@@ -631,12 +767,18 @@
                     "Write a C/C+ + program to implementation of shift reduce parsing Algorithm",
                     "Write a C/C++ program to construct i) LR Parsing table and Implement LR parsing algorithm, ii) CLR Parsing table and implement CLR parsing algorithm, iii) LALR Parsing table and implement LALR parsing algorithm",
                     "YACC program to recognize i) a valid arithmetic expression that uses operators +, -,* and /, ii) strings 'aabb','abbb', 'ab' and 'a' using the grammar",
-                    "Write a C program to implement i) the syntax-directed definition of “if E then S1” and “if E then S1 else S2”, ii) a Symbol Table with function to create, insert, modify, search and display"]
+                    "Write a C program to implement i) the syntax-directed definition of “if E then S1” and “if E then S1 else S2”, ii) a Symbol Table with function to create, insert, modify, search and display"],
+                    "credits": 1,
+                    "meanSG": 9.383,
+                    "medianSG":9,
+                    "maxSG":10,
+                    "minSG": 8
                 },
                 {
                     "courseID": 7,
                     "name":"Computer Graphics Lab",
                     "courseCode":"CS317",
+                    "type":"lab",
                     "experiments":["Program to implement DDA algorithms for line", 
                     "Program to implement Bresenham's algorithms for line, circle and ellipse drawing",
                     "Program to implement Mid Point Circle algorithm",
@@ -648,7 +790,12 @@
                     "Program for conversion between color models", 
                     "Program to perform animation using any Animation software", 
                     "Program to perform basic operations on image using any image editing software", 
-                    "Program to draw different shapes such as hut, face, kite, fish etc"]
+                    "Program to draw different shapes such as hut, face, kite, fish etc"],
+                    "credits": 1,
+                    "meanSG": 9.315,
+                    "medianSG":9,
+                    "maxSG":10,
+                    "minSG": 7
                 }
             ]
             
@@ -656,16 +803,16 @@
 
         {
             "semID": 4,
-            "credits": 22,
-            "meanSG": 8,
-            "medianSG": 9,
+            "meanSG": 8.456,
+            "medianSG": 8.67,
             "maxSG": 9.95,
-            "minSG": 5.5,
+            "minSG": 5.95,
             "courses":[
                 {
                     "courseID": 1,
                     "name":"Analysis and Design of Algorithms",
                     "courseCode":"CS311",
+                    "type":"theory",
                     "units": [
                         {
                             "unitID": 1,
@@ -699,21 +846,22 @@
                         }
                     ],
                     "books": [{"name": "Fundamentals of Computer Algorithms by E. Horowitz and S. Sahni, Galgotia"},{"name":"Introduction to Algorithms by Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest and Clifford Stein, MIT Press, Cambridge"}],
-                    "sources": [{"source": "", "link": ""}],
-                    "credits": 2,
-                    "meanSG": 8,
-                    "medianSG":9,
+                    "sources": [{"source": "NPTEL-IITM", "link": "https://www.youtube.com/playlist?list=PLyqSpQzTE6M9DKhN7z2fOpKTJWu-639_P"}],
+                    "credits": 4,
+                    "meanSG": 7.191,
+                    "medianSG":8,
                     "maxSG":10,
-                    "minSG": 5,
+                    "minSG": 0,
                     "relevance": {
                         "placement": 4,
-                        "compitetive": 1
+                        "compitetive": 4
                     }
                 },
                 {
                     "courseID": 2,
                     "name":"Data Base Management Systems",
                     "courseCode":"CS312",
+                    "type":"theory",
                     "units": [
                         {
                             "unitID": 1,
@@ -743,12 +891,22 @@
                         }
                     ],
                     "books": [{"name": "Database System Concepts by Abraham Silberschatz, Henry F. Korth and S. Sudarshan, McGraw-Hill"},{"name":"Fundamental Database Systems by Ramez Elmasri and Shamkant B. Navathe, Pearson Education"}],
-                    "sources": [{"source": "", "link": ""}]
+                    "sources": [{"source": "Knowledge Gate", "link": "https://www.youtube.com/playlist?list=PLmXKhU9FNesR1rSES7oLdJaNFgmuj0SYV"}],
+                    "credits": 4,
+                    "meanSG": 8.561,
+                    "medianSG":9,
+                    "maxSG":10,
+                    "minSG": 0,
+                    "relevance": {
+                        "placement": 4,
+                        "compitetive": 4
+                    }
                 },
                 {
                     "courseID": 3,
                     "name":"Compiler Design",
                     "courseCode":"CS313",
+                    "type":"theory",
                     "units": [
                         {
                             "unitID": 1,
@@ -779,12 +937,22 @@
                         }
                     ],
                     "books": [{"name": "Compilers Principles, Techniques and Tools by Alfred V. Aho, Monica S. Lam, Ravi Sethi and Jeffrey D Ullman, Pearson Education"},{"name":"Compiler Design in C by Allen I. Holub, Prentice Hall of India"}],
-                    "sources": [{"source": "", "link": ""}]
+                    "sources": [{"source": "Gate Smashers", "link": "https://www.youtube.com/playlist?list=PLxCzCOWd7aiEKtKSIHYusizkESC42diyc"}],
+                    "credits": 4,
+                    "meanSG": 8.863,
+                    "medianSG":9,
+                    "maxSG":10,
+                    "minSG":7,
+                    "relevance": {
+                        "placement": 2,
+                        "compitetive": 4
+                    }
                 },
                 {
                     "courseID": 4,
                     "name":"Computer Graphics",
                     "courseCode":"CS314",
+                    "type":"theory",
                     "units": [
                         {
                             "unitID": 1,
@@ -814,12 +982,22 @@
                         }
                     ],
                     "books": [{"name": "Procedural Elements for Computer Graphics by D.F. Rogers, McGraw Hill"},{"name":"Mathematical Elements for Computer Graphics by D.F. Rogers, McGraw Hil"}],
-                    "sources": [{"source": "", "link": ""}]
+                    "sources": [{"source": "NPTEL-IIT Guwahati", "link": "https://www.youtube.com/playlist?list=PLwdnzlV3ogoWaYiowRtJ8t8FeR-ODfSV1"}],
+                    "credits": 4,
+                    "meanSG": 8.452,
+                    "medianSG":9,
+                    "maxSG":10,
+                    "minSG": 5,
+                    "relevance": {
+                        "placement": 3,
+                        "compitetive": 0
+                    }
                 },
                 {
                     "courseID": 5,
                     "name":"Data Base Management Systems Lab",
                     "courseCode":"CS315",
+                    "type":"lab",
                     "experiments":["Online Examination System",
                     "Development of Online Course Portal for the Campus",
                     "Student Attendance Management System",
@@ -832,11 +1010,17 @@
                     "Hostel Allotment System",
                     "Campus Network Complaint System",
                     "Hospital Management System",
-                    "Civil/Electrical Works Repair Information System"]
+                    "Civil/Electrical Works Repair Information System"],
+                    "credits": 1,
+                    "meanSG": 9.616,
+                    "medianSG":10,
+                    "maxSG":10,
+                    "minSG": 8
                 },
                 {
                     "courseID": 6,
                     "name":"Compiler Design Lab",
+                    "type":"lab",
                     "courseCode":"CS316",
                     "experiments":["Write a C/C++ program to search the number of occurrences of any word", "string and sub sequence in a given string","Write a C/C++ program to find the number of occurrences of any word in a file and replace that with another word",
                     "Implement the lexical analyzer using JLex, Flex or other lexical analyzer generating tools and write the following program using LEX",
@@ -849,12 +1033,18 @@
                     "Write a C/C+ + program to implementation of shift reduce parsing Algorithm",
                     "Write a C/C++ program to construct i) LR Parsing table and Implement LR parsing algorithm, ii) CLR Parsing table and implement CLR parsing algorithm, iii) LALR Parsing table and implement LALR parsing algorithm",
                     "YACC program to recognize i) a valid arithmetic expression that uses operators +, -,* and /, ii) strings 'aabb','abbb', 'ab' and 'a' using the grammar",
-                    "Write a C program to implement i) the syntax-directed definition of “if E then S1” and “if E then S1 else S2”, ii) a Symbol Table with function to create, insert, modify, search and display"]
+                    "Write a C program to implement i) the syntax-directed definition of “if E then S1” and “if E then S1 else S2”, ii) a Symbol Table with function to create, insert, modify, search and display"],
+                    "credits": 1,
+                    "meanSG": 9.383,
+                    "medianSG":9,
+                    "maxSG":10,
+                    "minSG": 8
                 },
                 {
                     "courseID": 7,
                     "name":"Computer Graphics Lab",
                     "courseCode":"CS317",
+                    "type":"lab",
                     "experiments":["Program to implement DDA algorithms for line", 
                     "Program to implement Bresenham's algorithms for line, circle and ellipse drawing",
                     "Program to implement Mid Point Circle algorithm",
@@ -866,7 +1056,12 @@
                     "Program for conversion between color models", 
                     "Program to perform animation using any Animation software", 
                     "Program to perform basic operations on image using any image editing software", 
-                    "Program to draw different shapes such as hut, face, kite, fish etc"]
+                    "Program to draw different shapes such as hut, face, kite, fish etc"],
+                    "credits": 1,
+                    "meanSG": 9.315,
+                    "medianSG":9,
+                    "maxSG":10,
+                    "minSG": 7
                 }
             ]
             
@@ -874,16 +1069,17 @@
 
         {
             "semID": 5,
-            "credits": 22,
-            "meanSG": 8,
-            "medianSG": 9,
+            "meanSG": 8.456,
+            "medianSG": 8.67,
             "maxSG": 9.95,
-            "minSG": 5.5,
+            "minSG": 5.95,
+            "credits":21,
             "courses":[
                 {
                     "courseID": 1,
                     "name":"Analysis and Design of Algorithms",
                     "courseCode":"CS311",
+                    "type":"theory",
                     "units": [
                         {
                             "unitID": 1,
@@ -917,21 +1113,22 @@
                         }
                     ],
                     "books": [{"name": "Fundamentals of Computer Algorithms by E. Horowitz and S. Sahni, Galgotia"},{"name":"Introduction to Algorithms by Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest and Clifford Stein, MIT Press, Cambridge"}],
-                    "sources": [{"source": "", "link": ""}],
-                    "credits": 2,
-                    "meanSG": 8,
-                    "medianSG":9,
+                    "sources": [{"source": "NPTEL-IITM", "link": "https://www.youtube.com/playlist?list=PLyqSpQzTE6M9DKhN7z2fOpKTJWu-639_P"}],
+                    "credits": 4,
+                    "meanSG": 7.191,
+                    "medianSG":8,
                     "maxSG":10,
-                    "minSG": 5,
+                    "minSG": 0,
                     "relevance": {
                         "placement": 4,
-                        "compitetive": 1
+                        "compitetive": 4
                     }
                 },
                 {
                     "courseID": 2,
                     "name":"Data Base Management Systems",
                     "courseCode":"CS312",
+                    "type":"theory",
                     "units": [
                         {
                             "unitID": 1,
@@ -961,12 +1158,22 @@
                         }
                     ],
                     "books": [{"name": "Database System Concepts by Abraham Silberschatz, Henry F. Korth and S. Sudarshan, McGraw-Hill"},{"name":"Fundamental Database Systems by Ramez Elmasri and Shamkant B. Navathe, Pearson Education"}],
-                    "sources": [{"source": "", "link": ""}]
+                    "sources": [{"source": "Knowledge Gate", "link": "https://www.youtube.com/playlist?list=PLmXKhU9FNesR1rSES7oLdJaNFgmuj0SYV"}],
+                    "credits": 4,
+                    "meanSG": 8.561,
+                    "medianSG":9,
+                    "maxSG":10,
+                    "minSG": 0,
+                    "relevance": {
+                        "placement": 4,
+                        "compitetive": 4
+                    }
                 },
                 {
                     "courseID": 3,
                     "name":"Compiler Design",
                     "courseCode":"CS313",
+                    "type":"theory",
                     "units": [
                         {
                             "unitID": 1,
@@ -997,12 +1204,22 @@
                         }
                     ],
                     "books": [{"name": "Compilers Principles, Techniques and Tools by Alfred V. Aho, Monica S. Lam, Ravi Sethi and Jeffrey D Ullman, Pearson Education"},{"name":"Compiler Design in C by Allen I. Holub, Prentice Hall of India"}],
-                    "sources": [{"source": "", "link": ""}]
+                    "sources": [{"source": "Gate Smashers", "link": "https://www.youtube.com/playlist?list=PLxCzCOWd7aiEKtKSIHYusizkESC42diyc"}],
+                    "credits": 4,
+                    "meanSG": 8.863,
+                    "medianSG":9,
+                    "maxSG":10,
+                    "minSG":7,
+                    "relevance": {
+                        "placement": 2,
+                        "compitetive": 4
+                    }
                 },
                 {
                     "courseID": 4,
                     "name":"Computer Graphics",
                     "courseCode":"CS314",
+                    "type":"theory",
                     "units": [
                         {
                             "unitID": 1,
@@ -1032,12 +1249,22 @@
                         }
                     ],
                     "books": [{"name": "Procedural Elements for Computer Graphics by D.F. Rogers, McGraw Hill"},{"name":"Mathematical Elements for Computer Graphics by D.F. Rogers, McGraw Hil"}],
-                    "sources": [{"source": "", "link": ""}]
+                    "sources": [{"source": "NPTEL-IIT Guwahati", "link": "https://www.youtube.com/playlist?list=PLwdnzlV3ogoWaYiowRtJ8t8FeR-ODfSV1"}],
+                    "credits": 4,
+                    "meanSG": 8.452,
+                    "medianSG":9,
+                    "maxSG":10,
+                    "minSG": 5,
+                    "relevance": {
+                        "placement": 3,
+                        "compitetive": 0
+                    }
                 },
                 {
                     "courseID": 5,
                     "name":"Data Base Management Systems Lab",
                     "courseCode":"CS315",
+                    "type":"lab",
                     "experiments":["Online Examination System",
                     "Development of Online Course Portal for the Campus",
                     "Student Attendance Management System",
@@ -1050,11 +1277,17 @@
                     "Hostel Allotment System",
                     "Campus Network Complaint System",
                     "Hospital Management System",
-                    "Civil/Electrical Works Repair Information System"]
+                    "Civil/Electrical Works Repair Information System"],
+                    "credits": 1,
+                    "meanSG": 9.616,
+                    "medianSG":10,
+                    "maxSG":10,
+                    "minSG": 8
                 },
                 {
                     "courseID": 6,
                     "name":"Compiler Design Lab",
+                    "type":"lab",
                     "courseCode":"CS316",
                     "experiments":["Write a C/C++ program to search the number of occurrences of any word", "string and sub sequence in a given string","Write a C/C++ program to find the number of occurrences of any word in a file and replace that with another word",
                     "Implement the lexical analyzer using JLex, Flex or other lexical analyzer generating tools and write the following program using LEX",
@@ -1067,12 +1300,18 @@
                     "Write a C/C+ + program to implementation of shift reduce parsing Algorithm",
                     "Write a C/C++ program to construct i) LR Parsing table and Implement LR parsing algorithm, ii) CLR Parsing table and implement CLR parsing algorithm, iii) LALR Parsing table and implement LALR parsing algorithm",
                     "YACC program to recognize i) a valid arithmetic expression that uses operators +, -,* and /, ii) strings 'aabb','abbb', 'ab' and 'a' using the grammar",
-                    "Write a C program to implement i) the syntax-directed definition of “if E then S1” and “if E then S1 else S2”, ii) a Symbol Table with function to create, insert, modify, search and display"]
+                    "Write a C program to implement i) the syntax-directed definition of “if E then S1” and “if E then S1 else S2”, ii) a Symbol Table with function to create, insert, modify, search and display"],
+                    "credits": 1,
+                    "meanSG": 9.383,
+                    "medianSG":9,
+                    "maxSG":10,
+                    "minSG": 8
                 },
                 {
                     "courseID": 7,
                     "name":"Computer Graphics Lab",
                     "courseCode":"CS317",
+                    "type":"lab",
                     "experiments":["Program to implement DDA algorithms for line", 
                     "Program to implement Bresenham's algorithms for line, circle and ellipse drawing",
                     "Program to implement Mid Point Circle algorithm",
@@ -1084,24 +1323,29 @@
                     "Program for conversion between color models", 
                     "Program to perform animation using any Animation software", 
                     "Program to perform basic operations on image using any image editing software", 
-                    "Program to draw different shapes such as hut, face, kite, fish etc"]
+                    "Program to draw different shapes such as hut, face, kite, fish etc"],
+                    "credits": 1,
+                    "meanSG": 9.315,
+                    "medianSG":9,
+                    "maxSG":10,
+                    "minSG": 7
                 }
             ]
             
         },
-
         {
             "semID": 6,
-            "credits": 22,
-            "meanSG": 8,
-            "medianSG": 9,
+            "meanSG": 8.456,
+            "medianSG": 8.67,
             "maxSG": 9.95,
-            "minSG": 5.5,
+            "minSG": 5.95,
+            "credits":21,
             "courses":[
                 {
                     "courseID": 1,
                     "name":"Analysis and Design of Algorithms",
                     "courseCode":"CS311",
+                    "type":"theory",
                     "units": [
                         {
                             "unitID": 1,
@@ -1135,21 +1379,22 @@
                         }
                     ],
                     "books": [{"name": "Fundamentals of Computer Algorithms by E. Horowitz and S. Sahni, Galgotia"},{"name":"Introduction to Algorithms by Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest and Clifford Stein, MIT Press, Cambridge"}],
-                    "sources": [{"source": "", "link": ""}],
-                    "credits": 2,
-                    "meanSG": 8,
-                    "medianSG":9,
+                    "sources": [{"source": "NPTEL-IITM", "link": "https://www.youtube.com/playlist?list=PLyqSpQzTE6M9DKhN7z2fOpKTJWu-639_P"}],
+                    "credits": 4,
+                    "meanSG": 7.191,
+                    "medianSG":8,
                     "maxSG":10,
-                    "minSG": 5,
+                    "minSG": 0,
                     "relevance": {
                         "placement": 4,
-                        "compitetive": 1
+                        "compitetive": 4
                     }
                 },
                 {
                     "courseID": 2,
                     "name":"Data Base Management Systems",
                     "courseCode":"CS312",
+                    "type":"theory",
                     "units": [
                         {
                             "unitID": 1,
@@ -1179,12 +1424,22 @@
                         }
                     ],
                     "books": [{"name": "Database System Concepts by Abraham Silberschatz, Henry F. Korth and S. Sudarshan, McGraw-Hill"},{"name":"Fundamental Database Systems by Ramez Elmasri and Shamkant B. Navathe, Pearson Education"}],
-                    "sources": [{"source": "", "link": ""}]
+                    "sources": [{"source": "Knowledge Gate", "link": "https://www.youtube.com/playlist?list=PLmXKhU9FNesR1rSES7oLdJaNFgmuj0SYV"}],
+                    "credits": 4,
+                    "meanSG": 8.561,
+                    "medianSG":9,
+                    "maxSG":10,
+                    "minSG": 0,
+                    "relevance": {
+                        "placement": 4,
+                        "compitetive": 4
+                    }
                 },
                 {
                     "courseID": 3,
                     "name":"Compiler Design",
                     "courseCode":"CS313",
+                    "type":"theory",
                     "units": [
                         {
                             "unitID": 1,
@@ -1215,12 +1470,22 @@
                         }
                     ],
                     "books": [{"name": "Compilers Principles, Techniques and Tools by Alfred V. Aho, Monica S. Lam, Ravi Sethi and Jeffrey D Ullman, Pearson Education"},{"name":"Compiler Design in C by Allen I. Holub, Prentice Hall of India"}],
-                    "sources": [{"source": "", "link": ""}]
+                    "sources": [{"source": "Gate Smashers", "link": "https://www.youtube.com/playlist?list=PLxCzCOWd7aiEKtKSIHYusizkESC42diyc"}],
+                    "credits": 4,
+                    "meanSG": 8.863,
+                    "medianSG":9,
+                    "maxSG":10,
+                    "minSG":7,
+                    "relevance": {
+                        "placement": 2,
+                        "compitetive": 4
+                    }
                 },
                 {
                     "courseID": 4,
                     "name":"Computer Graphics",
                     "courseCode":"CS314",
+                    "type":"theory",
                     "units": [
                         {
                             "unitID": 1,
@@ -1250,12 +1515,22 @@
                         }
                     ],
                     "books": [{"name": "Procedural Elements for Computer Graphics by D.F. Rogers, McGraw Hill"},{"name":"Mathematical Elements for Computer Graphics by D.F. Rogers, McGraw Hil"}],
-                    "sources": [{"source": "", "link": ""}]
+                    "sources": [{"source": "NPTEL-IIT Guwahati", "link": "https://www.youtube.com/playlist?list=PLwdnzlV3ogoWaYiowRtJ8t8FeR-ODfSV1"}],
+                    "credits": 4,
+                    "meanSG": 8.452,
+                    "medianSG":9,
+                    "maxSG":10,
+                    "minSG": 5,
+                    "relevance": {
+                        "placement": 3,
+                        "compitetive": 0
+                    }
                 },
                 {
                     "courseID": 5,
                     "name":"Data Base Management Systems Lab",
                     "courseCode":"CS315",
+                    "type":"lab",
                     "experiments":["Online Examination System",
                     "Development of Online Course Portal for the Campus",
                     "Student Attendance Management System",
@@ -1268,11 +1543,17 @@
                     "Hostel Allotment System",
                     "Campus Network Complaint System",
                     "Hospital Management System",
-                    "Civil/Electrical Works Repair Information System"]
+                    "Civil/Electrical Works Repair Information System"],
+                    "credits": 1,
+                    "meanSG": 9.616,
+                    "medianSG":10,
+                    "maxSG":10,
+                    "minSG": 8
                 },
                 {
                     "courseID": 6,
                     "name":"Compiler Design Lab",
+                    "type":"lab",
                     "courseCode":"CS316",
                     "experiments":["Write a C/C++ program to search the number of occurrences of any word", "string and sub sequence in a given string","Write a C/C++ program to find the number of occurrences of any word in a file and replace that with another word",
                     "Implement the lexical analyzer using JLex, Flex or other lexical analyzer generating tools and write the following program using LEX",
@@ -1285,12 +1566,18 @@
                     "Write a C/C+ + program to implementation of shift reduce parsing Algorithm",
                     "Write a C/C++ program to construct i) LR Parsing table and Implement LR parsing algorithm, ii) CLR Parsing table and implement CLR parsing algorithm, iii) LALR Parsing table and implement LALR parsing algorithm",
                     "YACC program to recognize i) a valid arithmetic expression that uses operators +, -,* and /, ii) strings 'aabb','abbb', 'ab' and 'a' using the grammar",
-                    "Write a C program to implement i) the syntax-directed definition of “if E then S1” and “if E then S1 else S2”, ii) a Symbol Table with function to create, insert, modify, search and display"]
+                    "Write a C program to implement i) the syntax-directed definition of “if E then S1” and “if E then S1 else S2”, ii) a Symbol Table with function to create, insert, modify, search and display"],
+                    "credits": 1,
+                    "meanSG": 9.383,
+                    "medianSG":9,
+                    "maxSG":10,
+                    "minSG": 8
                 },
                 {
                     "courseID": 7,
                     "name":"Computer Graphics Lab",
                     "courseCode":"CS317",
+                    "type":"lab",
                     "experiments":["Program to implement DDA algorithms for line", 
                     "Program to implement Bresenham's algorithms for line, circle and ellipse drawing",
                     "Program to implement Mid Point Circle algorithm",
@@ -1302,7 +1589,12 @@
                     "Program for conversion between color models", 
                     "Program to perform animation using any Animation software", 
                     "Program to perform basic operations on image using any image editing software", 
-                    "Program to draw different shapes such as hut, face, kite, fish etc"]
+                    "Program to draw different shapes such as hut, face, kite, fish etc"],
+                    "credits": 1,
+                    "meanSG": 9.315,
+                    "medianSG":9,
+                    "maxSG":10,
+                    "minSG": 7
                 }
             ]
             
@@ -1310,16 +1602,17 @@
 
         {
             "semID": 7,
-            "credits": 22,
-            "meanSG": 8,
-            "medianSG": 9,
+            "meanSG": 8.456,
+            "medianSG": 8.67,
             "maxSG": 9.95,
-            "minSG": 5.5,
+            "minSG": 5.95,
+            "credits":19,
             "courses":[
                 {
                     "courseID": 1,
                     "name":"Analysis and Design of Algorithms",
                     "courseCode":"CS311",
+                    "type":"theory",
                     "units": [
                         {
                             "unitID": 1,
@@ -1353,21 +1646,22 @@
                         }
                     ],
                     "books": [{"name": "Fundamentals of Computer Algorithms by E. Horowitz and S. Sahni, Galgotia"},{"name":"Introduction to Algorithms by Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest and Clifford Stein, MIT Press, Cambridge"}],
-                    "sources": [{"source": "", "link": ""}],
-                    "credits": 2,
-                    "meanSG": 8,
-                    "medianSG":9,
+                    "sources": [{"source": "NPTEL-IITM", "link": "https://www.youtube.com/playlist?list=PLyqSpQzTE6M9DKhN7z2fOpKTJWu-639_P"}],
+                    "credits": 4,
+                    "meanSG": 7.191,
+                    "medianSG":8,
                     "maxSG":10,
-                    "minSG": 5,
+                    "minSG": 0,
                     "relevance": {
                         "placement": 4,
-                        "compitetive": 1
+                        "compitetive": 4
                     }
                 },
                 {
                     "courseID": 2,
                     "name":"Data Base Management Systems",
                     "courseCode":"CS312",
+                    "type":"theory",
                     "units": [
                         {
                             "unitID": 1,
@@ -1397,12 +1691,22 @@
                         }
                     ],
                     "books": [{"name": "Database System Concepts by Abraham Silberschatz, Henry F. Korth and S. Sudarshan, McGraw-Hill"},{"name":"Fundamental Database Systems by Ramez Elmasri and Shamkant B. Navathe, Pearson Education"}],
-                    "sources": [{"source": "", "link": ""}]
+                    "sources": [{"source": "Knowledge Gate", "link": "https://www.youtube.com/playlist?list=PLmXKhU9FNesR1rSES7oLdJaNFgmuj0SYV"}],
+                    "credits": 4,
+                    "meanSG": 8.561,
+                    "medianSG":9,
+                    "maxSG":10,
+                    "minSG": 0,
+                    "relevance": {
+                        "placement": 4,
+                        "compitetive": 4
+                    }
                 },
                 {
                     "courseID": 3,
                     "name":"Compiler Design",
                     "courseCode":"CS313",
+                    "type":"theory",
                     "units": [
                         {
                             "unitID": 1,
@@ -1433,12 +1737,22 @@
                         }
                     ],
                     "books": [{"name": "Compilers Principles, Techniques and Tools by Alfred V. Aho, Monica S. Lam, Ravi Sethi and Jeffrey D Ullman, Pearson Education"},{"name":"Compiler Design in C by Allen I. Holub, Prentice Hall of India"}],
-                    "sources": [{"source": "", "link": ""}]
+                    "sources": [{"source": "Gate Smashers", "link": "https://www.youtube.com/playlist?list=PLxCzCOWd7aiEKtKSIHYusizkESC42diyc"}],
+                    "credits": 4,
+                    "meanSG": 8.863,
+                    "medianSG":9,
+                    "maxSG":10,
+                    "minSG":7,
+                    "relevance": {
+                        "placement": 2,
+                        "compitetive": 4
+                    }
                 },
                 {
                     "courseID": 4,
                     "name":"Computer Graphics",
                     "courseCode":"CS314",
+                    "type":"theory",
                     "units": [
                         {
                             "unitID": 1,
@@ -1468,12 +1782,22 @@
                         }
                     ],
                     "books": [{"name": "Procedural Elements for Computer Graphics by D.F. Rogers, McGraw Hill"},{"name":"Mathematical Elements for Computer Graphics by D.F. Rogers, McGraw Hil"}],
-                    "sources": [{"source": "", "link": ""}]
+                    "sources": [{"source": "NPTEL-IIT Guwahati", "link": "https://www.youtube.com/playlist?list=PLwdnzlV3ogoWaYiowRtJ8t8FeR-ODfSV1"}],
+                    "credits": 4,
+                    "meanSG": 8.452,
+                    "medianSG":9,
+                    "maxSG":10,
+                    "minSG": 5,
+                    "relevance": {
+                        "placement": 3,
+                        "compitetive": 0
+                    }
                 },
                 {
                     "courseID": 5,
                     "name":"Data Base Management Systems Lab",
                     "courseCode":"CS315",
+                    "type":"lab",
                     "experiments":["Online Examination System",
                     "Development of Online Course Portal for the Campus",
                     "Student Attendance Management System",
@@ -1486,11 +1810,17 @@
                     "Hostel Allotment System",
                     "Campus Network Complaint System",
                     "Hospital Management System",
-                    "Civil/Electrical Works Repair Information System"]
+                    "Civil/Electrical Works Repair Information System"],
+                    "credits": 1,
+                    "meanSG": 9.616,
+                    "medianSG":10,
+                    "maxSG":10,
+                    "minSG": 8
                 },
                 {
                     "courseID": 6,
                     "name":"Compiler Design Lab",
+                    "type":"lab",
                     "courseCode":"CS316",
                     "experiments":["Write a C/C++ program to search the number of occurrences of any word", "string and sub sequence in a given string","Write a C/C++ program to find the number of occurrences of any word in a file and replace that with another word",
                     "Implement the lexical analyzer using JLex, Flex or other lexical analyzer generating tools and write the following program using LEX",
@@ -1503,12 +1833,18 @@
                     "Write a C/C+ + program to implementation of shift reduce parsing Algorithm",
                     "Write a C/C++ program to construct i) LR Parsing table and Implement LR parsing algorithm, ii) CLR Parsing table and implement CLR parsing algorithm, iii) LALR Parsing table and implement LALR parsing algorithm",
                     "YACC program to recognize i) a valid arithmetic expression that uses operators +, -,* and /, ii) strings 'aabb','abbb', 'ab' and 'a' using the grammar",
-                    "Write a C program to implement i) the syntax-directed definition of “if E then S1” and “if E then S1 else S2”, ii) a Symbol Table with function to create, insert, modify, search and display"]
+                    "Write a C program to implement i) the syntax-directed definition of “if E then S1” and “if E then S1 else S2”, ii) a Symbol Table with function to create, insert, modify, search and display"],
+                    "credits": 1,
+                    "meanSG": 9.383,
+                    "medianSG":9,
+                    "maxSG":10,
+                    "minSG": 8
                 },
                 {
                     "courseID": 7,
                     "name":"Computer Graphics Lab",
                     "courseCode":"CS317",
+                    "type":"lab",
                     "experiments":["Program to implement DDA algorithms for line", 
                     "Program to implement Bresenham's algorithms for line, circle and ellipse drawing",
                     "Program to implement Mid Point Circle algorithm",
@@ -1520,7 +1856,12 @@
                     "Program for conversion between color models", 
                     "Program to perform animation using any Animation software", 
                     "Program to perform basic operations on image using any image editing software", 
-                    "Program to draw different shapes such as hut, face, kite, fish etc"]
+                    "Program to draw different shapes such as hut, face, kite, fish etc"],
+                    "credits": 1,
+                    "meanSG": 9.315,
+                    "medianSG":9,
+                    "maxSG":10,
+                    "minSG": 7
                 }
             ]
             
@@ -1528,16 +1869,17 @@
 
         {
             "semID": 8,
-            "credits": 22,
-            "meanSG": 8,
-            "medianSG": 9,
+            "meanSG": 8.456,
+            "medianSG": 8.67,
             "maxSG": 9.95,
-            "minSG": 5.5,
+            "minSG": 5.95,
+            "credits":19,
             "courses":[
                 {
                     "courseID": 1,
                     "name":"Analysis and Design of Algorithms",
                     "courseCode":"CS311",
+                    "type":"theory",
                     "units": [
                         {
                             "unitID": 1,
@@ -1571,21 +1913,22 @@
                         }
                     ],
                     "books": [{"name": "Fundamentals of Computer Algorithms by E. Horowitz and S. Sahni, Galgotia"},{"name":"Introduction to Algorithms by Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest and Clifford Stein, MIT Press, Cambridge"}],
-                    "sources": [{"source": "", "link": ""}],
-                    "credits": 2,
-                    "meanSG": 8,
-                    "medianSG":9,
+                    "sources": [{"source": "NPTEL-IITM", "link": "https://www.youtube.com/playlist?list=PLyqSpQzTE6M9DKhN7z2fOpKTJWu-639_P"}],
+                    "credits": 4,
+                    "meanSG": 7.191,
+                    "medianSG":8,
                     "maxSG":10,
-                    "minSG": 5,
+                    "minSG": 0,
                     "relevance": {
                         "placement": 4,
-                        "compitetive": 1
+                        "compitetive": 4
                     }
                 },
                 {
                     "courseID": 2,
                     "name":"Data Base Management Systems",
                     "courseCode":"CS312",
+                    "type":"theory",
                     "units": [
                         {
                             "unitID": 1,
@@ -1615,12 +1958,22 @@
                         }
                     ],
                     "books": [{"name": "Database System Concepts by Abraham Silberschatz, Henry F. Korth and S. Sudarshan, McGraw-Hill"},{"name":"Fundamental Database Systems by Ramez Elmasri and Shamkant B. Navathe, Pearson Education"}],
-                    "sources": [{"source": "", "link": ""}]
+                    "sources": [{"source": "Knowledge Gate", "link": "https://www.youtube.com/playlist?list=PLmXKhU9FNesR1rSES7oLdJaNFgmuj0SYV"}],
+                    "credits": 4,
+                    "meanSG": 8.561,
+                    "medianSG":9,
+                    "maxSG":10,
+                    "minSG": 0,
+                    "relevance": {
+                        "placement": 4,
+                        "compitetive": 4
+                    }
                 },
                 {
                     "courseID": 3,
                     "name":"Compiler Design",
                     "courseCode":"CS313",
+                    "type":"theory",
                     "units": [
                         {
                             "unitID": 1,
@@ -1651,12 +2004,22 @@
                         }
                     ],
                     "books": [{"name": "Compilers Principles, Techniques and Tools by Alfred V. Aho, Monica S. Lam, Ravi Sethi and Jeffrey D Ullman, Pearson Education"},{"name":"Compiler Design in C by Allen I. Holub, Prentice Hall of India"}],
-                    "sources": [{"source": "", "link": ""}]
+                    "sources": [{"source": "Gate Smashers", "link": "https://www.youtube.com/playlist?list=PLxCzCOWd7aiEKtKSIHYusizkESC42diyc"}],
+                    "credits": 4,
+                    "meanSG": 8.863,
+                    "medianSG":9,
+                    "maxSG":10,
+                    "minSG":7,
+                    "relevance": {
+                        "placement": 2,
+                        "compitetive": 4
+                    }
                 },
                 {
                     "courseID": 4,
                     "name":"Computer Graphics",
                     "courseCode":"CS314",
+                    "type":"theory",
                     "units": [
                         {
                             "unitID": 1,
@@ -1686,12 +2049,22 @@
                         }
                     ],
                     "books": [{"name": "Procedural Elements for Computer Graphics by D.F. Rogers, McGraw Hill"},{"name":"Mathematical Elements for Computer Graphics by D.F. Rogers, McGraw Hil"}],
-                    "sources": [{"source": "", "link": ""}]
+                    "sources": [{"source": "NPTEL-IIT Guwahati", "link": "https://www.youtube.com/playlist?list=PLwdnzlV3ogoWaYiowRtJ8t8FeR-ODfSV1"}],
+                    "credits": 4,
+                    "meanSG": 8.452,
+                    "medianSG":9,
+                    "maxSG":10,
+                    "minSG": 5,
+                    "relevance": {
+                        "placement": 3,
+                        "compitetive": 0
+                    }
                 },
                 {
                     "courseID": 5,
                     "name":"Data Base Management Systems Lab",
                     "courseCode":"CS315",
+                    "type":"lab",
                     "experiments":["Online Examination System",
                     "Development of Online Course Portal for the Campus",
                     "Student Attendance Management System",
@@ -1704,11 +2077,17 @@
                     "Hostel Allotment System",
                     "Campus Network Complaint System",
                     "Hospital Management System",
-                    "Civil/Electrical Works Repair Information System"]
+                    "Civil/Electrical Works Repair Information System"],
+                    "credits": 1,
+                    "meanSG": 9.616,
+                    "medianSG":10,
+                    "maxSG":10,
+                    "minSG": 8
                 },
                 {
                     "courseID": 6,
                     "name":"Compiler Design Lab",
+                    "type":"lab",
                     "courseCode":"CS316",
                     "experiments":["Write a C/C++ program to search the number of occurrences of any word", "string and sub sequence in a given string","Write a C/C++ program to find the number of occurrences of any word in a file and replace that with another word",
                     "Implement the lexical analyzer using JLex, Flex or other lexical analyzer generating tools and write the following program using LEX",
@@ -1721,12 +2100,18 @@
                     "Write a C/C+ + program to implementation of shift reduce parsing Algorithm",
                     "Write a C/C++ program to construct i) LR Parsing table and Implement LR parsing algorithm, ii) CLR Parsing table and implement CLR parsing algorithm, iii) LALR Parsing table and implement LALR parsing algorithm",
                     "YACC program to recognize i) a valid arithmetic expression that uses operators +, -,* and /, ii) strings 'aabb','abbb', 'ab' and 'a' using the grammar",
-                    "Write a C program to implement i) the syntax-directed definition of “if E then S1” and “if E then S1 else S2”, ii) a Symbol Table with function to create, insert, modify, search and display"]
+                    "Write a C program to implement i) the syntax-directed definition of “if E then S1” and “if E then S1 else S2”, ii) a Symbol Table with function to create, insert, modify, search and display"],
+                    "credits": 1,
+                    "meanSG": 9.383,
+                    "medianSG":9,
+                    "maxSG":10,
+                    "minSG": 8
                 },
                 {
                     "courseID": 7,
                     "name":"Computer Graphics Lab",
                     "courseCode":"CS317",
+                    "type":"lab",
                     "experiments":["Program to implement DDA algorithms for line", 
                     "Program to implement Bresenham's algorithms for line, circle and ellipse drawing",
                     "Program to implement Mid Point Circle algorithm",
@@ -1738,7 +2123,12 @@
                     "Program for conversion between color models", 
                     "Program to perform animation using any Animation software", 
                     "Program to perform basic operations on image using any image editing software", 
-                    "Program to draw different shapes such as hut, face, kite, fish etc"]
+                    "Program to draw different shapes such as hut, face, kite, fish etc"],
+                    "credits": 1,
+                    "meanSG": 9.315,
+                    "medianSG":9,
+                    "maxSG":10,
+                    "minSG": 7
                 }
             ]
             
