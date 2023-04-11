@@ -1,6 +1,7 @@
 import React from "react";
 import SemCard from "../components/SemCard";
 import styles from "../styles/semcard.module.css";
+import semData from "../data/syllabus.json";
 
 const dummyData = [
   { sem: 1, desc: "" },
@@ -39,3 +40,10 @@ const index = () => {
 };
 
 export default index;
+
+export async function getStaticProps() {
+  console.log(semData);
+  return {
+    props: { semData },
+  };
+}
