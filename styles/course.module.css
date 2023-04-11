@@ -10,8 +10,9 @@
   
   .collapsecontent {
     width: 50vw;
-    margin: auto;
-    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    margin-left: 30rem ;
+    margin-top: 7rem;
+    /* box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75); */
   }
 
   .collapse {

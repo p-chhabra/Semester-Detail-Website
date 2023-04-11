@@ -8,10 +8,23 @@ const Course = ({ course }) => {
   const router = useRouter();
   const courseID = router.query.course;
   const semID = router.query.semester;
+  const unitArr = semData.semesters[semID].courses[courseID].units;
   return (
     <Fragment>
-      <div className="h-full">
-        <Accordian></Accordian>
+      <h1 className="h1">Ada</h1>
+      <h2 className="h2">Syllabus</h2>
+      <div className="h-full"><div className="wrap">
+      <div className="flex flex-row justify-center items-center">
+        <div className="tabs">
+        {unitArr.map((unit)=>{
+          return <Accordian item={unit.unitID}/>
+        })}
+
+          </div>
+          </div>
+          </div>
+
+        
         <div className={styles.collapsecontent}>
           <div className={styles.collapse} id="instagram">
             <a className="instagram" href="#instagram">
