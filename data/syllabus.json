@@ -227,6 +227,7 @@
             "minSG": 5.5,
             "courses":[
                 {
+                    "courseID": 1,
                     "name":"Analysis and Design of Algorithms",
                     "courseCode":"CS311",
                     "units": [
@@ -274,6 +275,7 @@
                     }
                 },
                 {
+                    "courseID": 2,
                     "name":"Data Base Management Systems",
                     "courseCode":"CS312",
                     "units": [
@@ -308,6 +310,7 @@
                     "sources": [{"source": "", "link": ""}]
                 },
                 {
+                    "courseID": 3,
                     "name":"Compiler Design",
                     "courseCode":"CS313",
                     "units": [
@@ -343,6 +346,7 @@
                     "sources": [{"source": "", "link": ""}]
                 },
                 {
+                    "courseID": 4,
                     "name":"Computer Graphics",
                     "courseCode":"CS314",
                     "units": [
@@ -377,6 +381,7 @@
                     "sources": [{"source": "", "link": ""}]
                 },
                 {
+                    "courseID": 5,
                     "name":"Data Base Management Systems Lab",
                     "courseCode":"CS315",
                     "experiments":["Online Examination System",
@@ -394,6 +399,7 @@
                     "Civil/Electrical Works Repair Information System"]
                 },
                 {
+                    "courseID": 6,
                     "name":"Compiler Design Lab",
                     "courseCode":"CS316",
                     "experiments":["Write a C/C++ program to search the number of occurrences of any word", "string and sub sequence in a given string","Write a C/C++ program to find the number of occurrences of any word in a file and replace that with another word",
@@ -410,6 +416,7 @@
                     "Write a C program to implement i) the syntax-directed definition of “if E then S1” and “if E then S1 else S2”, ii) a Symbol Table with function to create, insert, modify, search and display"]
                 },
                 {
+                    "courseID": 7,
                     "name":"Computer Graphics Lab",
                     "courseCode":"CS317",
                     "experiments":["Program to implement DDA algorithms for line", 
@@ -438,6 +445,7 @@
             "minSG": 5.5,
             "courses":[
                 {
+                    "courseID": 1,
                     "name":"Analysis and Design of Algorithms",
                     "courseCode":"CS311",
                     "units": [
@@ -485,6 +493,7 @@
                     }
                 },
                 {
+                    "courseID": 2,
                     "name":"Data Base Management Systems",
                     "courseCode":"CS312",
                     "units": [
@@ -519,6 +528,7 @@
                     "sources": [{"source": "", "link": ""}]
                 },
                 {
+                    "courseID": 3,
                     "name":"Compiler Design",
                     "courseCode":"CS313",
                     "units": [
@@ -554,6 +564,7 @@
                     "sources": [{"source": "", "link": ""}]
                 },
                 {
+                    "courseID": 4,
                     "name":"Computer Graphics",
                     "courseCode":"CS314",
                     "units": [
@@ -588,6 +599,7 @@
                     "sources": [{"source": "", "link": ""}]
                 },
                 {
+                    "courseID": 5,
                     "name":"Data Base Management Systems Lab",
                     "courseCode":"CS315",
                     "experiments":["Online Examination System",
@@ -605,6 +617,7 @@
                     "Civil/Electrical Works Repair Information System"]
                 },
                 {
+                    "courseID": 6,
                     "name":"Compiler Design Lab",
                     "courseCode":"CS316",
                     "experiments":["Write a C/C++ program to search the number of occurrences of any word", "string and sub sequence in a given string","Write a C/C++ program to find the number of occurrences of any word in a file and replace that with another word",
@@ -621,6 +634,7 @@
                     "Write a C program to implement i) the syntax-directed definition of “if E then S1” and “if E then S1 else S2”, ii) a Symbol Table with function to create, insert, modify, search and display"]
                 },
                 {
+                    "courseID": 7,
                     "name":"Computer Graphics Lab",
                     "courseCode":"CS317",
                     "experiments":["Program to implement DDA algorithms for line", 
@@ -649,6 +663,7 @@
             "minSG": 5.5,
             "courses":[
                 {
+                    "courseID": 1,
                     "name":"Analysis and Design of Algorithms",
                     "courseCode":"CS311",
                     "units": [
@@ -696,6 +711,7 @@
                     }
                 },
                 {
+                    "courseID": 2,
                     "name":"Data Base Management Systems",
                     "courseCode":"CS312",
                     "units": [
@@ -730,6 +746,7 @@
                     "sources": [{"source": "", "link": ""}]
                 },
                 {
+                    "courseID": 3,
                     "name":"Compiler Design",
                     "courseCode":"CS313",
                     "units": [
@@ -765,6 +782,7 @@
                     "sources": [{"source": "", "link": ""}]
                 },
                 {
+                    "courseID": 4,
                     "name":"Computer Graphics",
                     "courseCode":"CS314",
                     "units": [
@@ -799,6 +817,7 @@
                     "sources": [{"source": "", "link": ""}]
                 },
                 {
+                    "courseID": 5,
                     "name":"Data Base Management Systems Lab",
                     "courseCode":"CS315",
                     "experiments":["Online Examination System",
@@ -816,6 +835,7 @@
                     "Civil/Electrical Works Repair Information System"]
                 },
                 {
+                    "courseID": 6,
                     "name":"Compiler Design Lab",
                     "courseCode":"CS316",
                     "experiments":["Write a C/C++ program to search the number of occurrences of any word", "string and sub sequence in a given string","Write a C/C++ program to find the number of occurrences of any word in a file and replace that with another word",
@@ -832,6 +852,7 @@
                     "Write a C program to implement i) the syntax-directed definition of “if E then S1” and “if E then S1 else S2”, ii) a Symbol Table with function to create, insert, modify, search and display"]
                 },
                 {
+                    "courseID": 7,
                     "name":"Computer Graphics Lab",
                     "courseCode":"CS317",
                     "experiments":["Program to implement DDA algorithms for line", 
@@ -860,6 +881,7 @@
             "minSG": 5.5,
             "courses":[
                 {
+                    "courseID": 1,
                     "name":"Analysis and Design of Algorithms",
                     "courseCode":"CS311",
                     "units": [
@@ -907,6 +929,7 @@
                     }
                 },
                 {
+                    "courseID": 2,
                     "name":"Data Base Management Systems",
                     "courseCode":"CS312",
                     "units": [
@@ -941,6 +964,7 @@
                     "sources": [{"source": "", "link": ""}]
                 },
                 {
+                    "courseID": 3,
                     "name":"Compiler Design",
                     "courseCode":"CS313",
                     "units": [
@@ -976,6 +1000,7 @@
                     "sources": [{"source": "", "link": ""}]
                 },
                 {
+                    "courseID": 4,
                     "name":"Computer Graphics",
                     "courseCode":"CS314",
                     "units": [
@@ -1010,6 +1035,7 @@
                     "sources": [{"source": "", "link": ""}]
                 },
                 {
+                    "courseID": 5,
                     "name":"Data Base Management Systems Lab",
                     "courseCode":"CS315",
                     "experiments":["Online Examination System",
@@ -1027,6 +1053,7 @@
                     "Civil/Electrical Works Repair Information System"]
                 },
                 {
+                    "courseID": 6,
                     "name":"Compiler Design Lab",
                     "courseCode":"CS316",
                     "experiments":["Write a C/C++ program to search the number of occurrences of any word", "string and sub sequence in a given string","Write a C/C++ program to find the number of occurrences of any word in a file and replace that with another word",
@@ -1043,6 +1070,7 @@
                     "Write a C program to implement i) the syntax-directed definition of “if E then S1” and “if E then S1 else S2”, ii) a Symbol Table with function to create, insert, modify, search and display"]
                 },
                 {
+                    "courseID": 7,
                     "name":"Computer Graphics Lab",
                     "courseCode":"CS317",
                     "experiments":["Program to implement DDA algorithms for line", 
@@ -1071,6 +1099,7 @@
             "minSG": 5.5,
             "courses":[
                 {
+                    "courseID": 1,
                     "name":"Analysis and Design of Algorithms",
                     "courseCode":"CS311",
                     "units": [
@@ -1118,6 +1147,7 @@
                     }
                 },
                 {
+                    "courseID": 2,
                     "name":"Data Base Management Systems",
                     "courseCode":"CS312",
                     "units": [
@@ -1152,6 +1182,7 @@
                     "sources": [{"source": "", "link": ""}]
                 },
                 {
+                    "courseID": 3,
                     "name":"Compiler Design",
                     "courseCode":"CS313",
                     "units": [
@@ -1187,6 +1218,7 @@
                     "sources": [{"source": "", "link": ""}]
                 },
                 {
+                    "courseID": 4,
                     "name":"Computer Graphics",
                     "courseCode":"CS314",
                     "units": [
@@ -1221,6 +1253,7 @@
                     "sources": [{"source": "", "link": ""}]
                 },
                 {
+                    "courseID": 5,
                     "name":"Data Base Management Systems Lab",
                     "courseCode":"CS315",
                     "experiments":["Online Examination System",
@@ -1238,6 +1271,7 @@
                     "Civil/Electrical Works Repair Information System"]
                 },
                 {
+                    "courseID": 6,
                     "name":"Compiler Design Lab",
                     "courseCode":"CS316",
                     "experiments":["Write a C/C++ program to search the number of occurrences of any word", "string and sub sequence in a given string","Write a C/C++ program to find the number of occurrences of any word in a file and replace that with another word",
@@ -1254,6 +1288,7 @@
                     "Write a C program to implement i) the syntax-directed definition of “if E then S1” and “if E then S1 else S2”, ii) a Symbol Table with function to create, insert, modify, search and display"]
                 },
                 {
+                    "courseID": 7,
                     "name":"Computer Graphics Lab",
                     "courseCode":"CS317",
                     "experiments":["Program to implement DDA algorithms for line", 
@@ -1282,6 +1317,7 @@
             "minSG": 5.5,
             "courses":[
                 {
+                    "courseID": 1,
                     "name":"Analysis and Design of Algorithms",
                     "courseCode":"CS311",
                     "units": [
@@ -1329,6 +1365,7 @@
                     }
                 },
                 {
+                    "courseID": 2,
                     "name":"Data Base Management Systems",
                     "courseCode":"CS312",
                     "units": [
@@ -1363,6 +1400,7 @@
                     "sources": [{"source": "", "link": ""}]
                 },
                 {
+                    "courseID": 3,
                     "name":"Compiler Design",
                     "courseCode":"CS313",
                     "units": [
@@ -1398,6 +1436,7 @@
                     "sources": [{"source": "", "link": ""}]
                 },
                 {
+                    "courseID": 4,
                     "name":"Computer Graphics",
                     "courseCode":"CS314",
                     "units": [
@@ -1432,6 +1471,7 @@
                     "sources": [{"source": "", "link": ""}]
                 },
                 {
+                    "courseID": 5,
                     "name":"Data Base Management Systems Lab",
                     "courseCode":"CS315",
                     "experiments":["Online Examination System",
@@ -1449,6 +1489,7 @@
                     "Civil/Electrical Works Repair Information System"]
                 },
                 {
+                    "courseID": 6,
                     "name":"Compiler Design Lab",
                     "courseCode":"CS316",
                     "experiments":["Write a C/C++ program to search the number of occurrences of any word", "string and sub sequence in a given string","Write a C/C++ program to find the number of occurrences of any word in a file and replace that with another word",
@@ -1465,6 +1506,7 @@
                     "Write a C program to implement i) the syntax-directed definition of “if E then S1” and “if E then S1 else S2”, ii) a Symbol Table with function to create, insert, modify, search and display"]
                 },
                 {
+                    "courseID": 7,
                     "name":"Computer Graphics Lab",
                     "courseCode":"CS317",
                     "experiments":["Program to implement DDA algorithms for line", 
@@ -1493,6 +1535,7 @@
             "minSG": 5.5,
             "courses":[
                 {
+                    "courseID": 1,
                     "name":"Analysis and Design of Algorithms",
                     "courseCode":"CS311",
                     "units": [
@@ -1540,6 +1583,7 @@
                     }
                 },
                 {
+                    "courseID": 2,
                     "name":"Data Base Management Systems",
                     "courseCode":"CS312",
                     "units": [
@@ -1574,6 +1618,7 @@
                     "sources": [{"source": "", "link": ""}]
                 },
                 {
+                    "courseID": 3,
                     "name":"Compiler Design",
                     "courseCode":"CS313",
                     "units": [
@@ -1609,6 +1654,7 @@
                     "sources": [{"source": "", "link": ""}]
                 },
                 {
+                    "courseID": 4,
                     "name":"Computer Graphics",
                     "courseCode":"CS314",
                     "units": [
@@ -1643,6 +1689,7 @@
                     "sources": [{"source": "", "link": ""}]
                 },
                 {
+                    "courseID": 5,
                     "name":"Data Base Management Systems Lab",
                     "courseCode":"CS315",
                     "experiments":["Online Examination System",
@@ -1660,6 +1707,7 @@
                     "Civil/Electrical Works Repair Information System"]
                 },
                 {
+                    "courseID": 6,
                     "name":"Compiler Design Lab",
                     "courseCode":"CS316",
                     "experiments":["Write a C/C++ program to search the number of occurrences of any word", "string and sub sequence in a given string","Write a C/C++ program to find the number of occurrences of any word in a file and replace that with another word",
@@ -1676,6 +1724,7 @@
                     "Write a C program to implement i) the syntax-directed definition of “if E then S1” and “if E then S1 else S2”, ii) a Symbol Table with function to create, insert, modify, search and display"]
                 },
                 {
+                    "courseID": 7,
                     "name":"Computer Graphics Lab",
                     "courseCode":"CS317",
                     "experiments":["Program to implement DDA algorithms for line", 

@@ -35,7 +35,6 @@ const DUMMY_DATA = [
 const Semester = ({ sem }) => {
   const router = useRouter();
   const semesterID = router.query.semester;
-  let i = 0;
 
   return (
     <div className="h-full">
@@ -47,7 +46,7 @@ const Semester = ({ sem }) => {
           {sem.courses.map((course) => {
             return (
               <CourseCard
-                key={++i}
+                key={course.courseID}
                 id={semesterID}
                 courseID={course.courseID}
                 code={course.courseCode}

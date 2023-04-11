@@ -2,8 +2,9 @@ import React, { Fragment } from "react";
 import { useRouter } from "next/router";
 import Accordian from "../../../components/accordian";
 import styles from "../../../styles/course.module.css";
+import semData from "../../../data/syllabus.json";
 
-const Course = () => {
+const Course = ({ course }) => {
   const router = useRouter();
   const courseID = router.query.course;
   const semID = router.query.semester;
@@ -61,3 +62,26 @@ const Course = () => {
 };
 
 export default Course;
+
+export async function getStaticPaths(context) {
+  console.log(context);
+  // const paths = semData.semesters[semID].courses.map((course) => {
+  //   return {
+  //     params: {
+  //       course: course.courseID.toString(),
+  //     },
+  //   };
+  // });
+  return {
+    paths: [{ params: { semester: "1", course: "1" } }],
+    fallback: false,
+  };
+}
+
+export async function getStaticProps(context) {
+  const semID = context.params.semester;
+  const courseID = context.params.course;
+  return {
+    props: { course: semData.semesters[semID].courses[courseID] },
+  };
+}
