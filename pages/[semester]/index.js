@@ -4,34 +4,6 @@ import styles from "../../styles/courses.module.css";
 import CourseCard from "../../components/coursesCard";
 import semData from "../../data/syllabus.json";
 
-const DUMMY_DATA = [
-  {
-    id: 1,
-    name: "Distributed",
-    code: "CS-311",
-  },
-  {
-    id: 2,
-    name: "Computer Networks",
-    code: "CS-312",
-  },
-  {
-    id: 3,
-    name: "Sofrware Engineering",
-    code: "CS-313",
-  },
-  {
-    id: 4,
-    name: "Digital Image Processing",
-    code: "CS-314",
-  },
-  {
-    id: 5,
-    name: "Total Quality Management",
-    code: "CS-315",
-  },
-];
-
 const Semester = ({ sem }) => {
   const router = useRouter();
   const semesterID = router.query.semester;

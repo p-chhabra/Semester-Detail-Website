@@ -3,17 +3,6 @@ import SemCard from "../components/SemCard";
 import styles from "../styles/semcard.module.css";
 import semData from "../data/syllabus.json";
 
-const dummyData = [
-  { sem: 1, desc: "" },
-  { sem: 2, desc: "" },
-  { sem: 3, desc: "" },
-  { sem: 4, desc: "" },
-  { sem: 5, desc: "" },
-  { sem: 6, desc: "" },
-  { sem: 7, desc: "" },
-  { sem: 8, desc: "" },
-];
-
 const index = ({ semData }) => {
   const semesters = semData.semesters.map((sem) => {
     return (
