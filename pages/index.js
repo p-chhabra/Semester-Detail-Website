@@ -14,7 +14,8 @@ const dummyData = [
   { sem: 8, desc: "" },
 ];
 
-const index = () => {
+const index = ({semData}) => {
+
   return (
     <>
       <div className="text-2xl">Home Page</div>
@@ -22,15 +23,7 @@ const index = () => {
         <div className={styles.box}>
           <div className="w-full">
             <main className={styles.grid}>
-              {dummyData.map((data) => {
-                return (
-                  <SemCard
-                    key={data.sem}
-                    id={data.sem}
-                    desc={data.desc}
-                  ></SemCard>
-                );
-              })}
+              { for }
             </main>
           </div>
         </div>
