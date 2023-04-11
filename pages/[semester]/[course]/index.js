@@ -9,7 +9,7 @@ const Course = () => {
   const semID = router.query.semester;
   return (
     <Fragment>
-      <div className="h-screen">
+      <div className="h-full">
         <Accordian></Accordian>
         <div className={styles.collapsecontent}>
           <div className={styles.collapse} id="instagram">

@@ -2,6 +2,7 @@ import React from "react";
 import { useRouter } from "next/router";
 import styles from "../../styles/courses.module.css";
 import CourseCard from "../../components/coursesCard";
+import semData from "../../data/syllabus.json";
 
 const DUMMY_DATA = [
   {
@@ -31,10 +32,11 @@ const DUMMY_DATA = [
   },
 ];
 
-const Semester = () => {
+const Semester = ({ sem }) => {
   const router = useRouter();
   const semesterID = router.query.semester;
-  console.log(semesterID);
+  let i = 0;
+
   return (
     <div className="h-full">
       <div className={styles.body}>
@@ -42,15 +44,15 @@ const Semester = () => {
           Semester {semesterID}
         </h1>
         <ol className={`${styles.olCards} ${styles.alternate}`}>
-          {/* kya subjectHeading */}
-          {DUMMY_DATA.map((data) => {
+          {sem.courses.map((course) => {
             return (
               <CourseCard
-                key={data.id}
+                key={++i}
                 id={semesterID}
-                courseID={data.id}
-                code={data.code}
-                name={data.name}
+                courseID={course.courseID}
+                code={course.courseCode}
+                name={course.name}
+                credits={course.credits}
               ></CourseCard>
             );
           })}
@@ -63,8 +65,23 @@ const Semester = () => {
 
 export default Semester;
 
-// style="--ol-cards-color-accent:#00a560"
-// style="--ol-cards-color-accent:#0166b4"
-// style="--ol-cards-color-accent:#582c8b"
-// style="--ol-cards-color-accent:#ed1c24"
-// style="--ol-cards-color-accent:#f68121"
+export async function getStaticPaths() {
+  const paths = semData.semesters.map((sem) => {
+    return {
+      params: { semester: sem.semID.toString() },
+    };
+  });
+
+  return {
+    paths,
+    fallback: false,
+  };
+}
+
+export async function getStaticProps(context) {
+  const params = context.params;
+  const semID = params.semester;
+  return {
+    props: { sem: semData.semesters[semID] },
+  };
+}

@@ -50,12 +50,12 @@
 
 .lists {
   color: white;
-  transition: all 0.3s;
+  transition: all 0.4s;
   position: relative;
 }
 
 .lists:hover {
-  transform: scale(1.05);
+  transform: translateY(-5px);
   border-bottom: 2px solid #bb86fc;
 }
 
@@ -168,7 +168,7 @@
   display: flex;
   align-items: center;
   gap: 2em;
-  justify-content: space-between;
+  justify-content: center;
   flex-direction: column;
   margin-left: -20em;
 }
@@ -195,10 +195,10 @@
 .container2 {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: left;
   align-items: flex-end;
   position: absolute;
-  right: 0;
+  right: 2em;
   top: 70px;
   gap: 5em;
 }

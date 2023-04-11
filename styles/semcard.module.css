@@ -52,6 +52,7 @@
 .btn:hover {
   background: #632aaa;
   transition-duration: 300ms;
+  color: white;
 }
 
 .h3 {

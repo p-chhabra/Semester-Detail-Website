@@ -116,7 +116,7 @@ const Contact = () => {
           >
             <ul className={styles.contactList + `pl-0`}>
               <li className={styles.listItem}>
-                <i className="fa fa-map-marker fa-2x">
+                <i className="">
                   <span className={`${styles.contactText} place`}>
                     NIT Hamirpur
                   </span>
@@ -124,7 +124,7 @@ const Contact = () => {
               </li>
 
               <li className={styles.listItem}>
-                <i className="fa fa-phone fa-2x">
+                <i className="">
                   <span className={`${styles.contactText} phone`}>
                     <a href="tel:8219266127" title="Give me a call">
                       82-192-66-127
@@ -134,7 +134,7 @@ const Contact = () => {
               </li>
 
               <li className={styles.listItem}>
-                <i className="fa fa-envelope fa-2x">
+                <i className="">
                   <span className={`${styles.contactText} gmail`}>
                     <a
                       href="mailto:20bcs018@nith.ac.in"

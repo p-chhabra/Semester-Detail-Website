@@ -14,17 +14,24 @@ const dummyData = [
   { sem: 8, desc: "" },
 ];
 
-const index = ({semData}) => {
-
+const index = ({ semData }) => {
+  const semesters = semData.semesters.map((sem) => {
+    return (
+      <SemCard
+        key={sem.semID}
+        id={sem.semID}
+        credits={sem.credits}
+        subjects={sem.courses.length}
+      ></SemCard>
+    );
+  });
   return (
     <>
-      <div className="text-2xl">Home Page</div>
+      <div className="text-4xl font-bold text-[#BB86FC]">Select Semester</div>
       <div className="flex flex-row justify-center min-h-screen w-full">
         <div className={styles.box}>
           <div className="w-full">
-            <main className={styles.grid}>
-              { for }
-            </main>
+            <main className={styles.grid}>{semesters}</main>
           </div>
         </div>
       </div>
@@ -35,7 +42,6 @@ const index = ({semData}) => {
 export default index;
 
 export async function getStaticProps() {
-  console.log(semData);
   return {
     props: { semData },
   };
