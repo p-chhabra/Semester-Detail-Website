@@ -9,47 +9,49 @@ const Course = () => {
   const semID = router.query.semester;
   return (
     <Fragment>
-      <Accordian></Accordian>
-      <div className={styles.collapsecontent}>
-        <div className={styles.collapse} id="instagram">
-          <a className="instagram" href="#instagram">
-            Books
-          </a>
-          <div className={styles.content}>
-            <div className={styles.innercontent}>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
-              nobis iusto deleniti corporis alias quo a quam similique
-              cupiditate pariatur aliquid, omnis, officia dicta officiis impedit
-              nisi dolores ut, distinctio placeat. Magni dolores perferendis ab
-              laborum in neque, non exercitationem!
+      <div className="h-screen">
+        <Accordian></Accordian>
+        <div className={styles.collapsecontent}>
+          <div className={styles.collapse} id="instagram">
+            <a className="instagram" href="#instagram">
+              Books
+            </a>
+            <div className={styles.content}>
+              <div className={styles.innercontent}>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
+                nobis iusto deleniti corporis alias quo a quam similique
+                cupiditate pariatur aliquid, omnis, officia dicta officiis
+                impedit nisi dolores ut, distinctio placeat. Magni dolores
+                perferendis ab laborum in neque, non exercitationem!
+              </div>
             </div>
           </div>
-        </div>
-        <div className={styles.collapse} id="twitter">
-          <a className="twitter" href="#twitter">
-            Links
-          </a>
-          <div className={styles.content}>
-            <div className={styles.innercontent}>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
-              nobis iusto deleniti corporis alias quo a quam similique
-              cupiditate pariatur aliquid, omnis, officia dicta officiis impedit
-              nisi dolores ut, distinctio placeat. Magni dolores perferendis ab
-              laborum in neque, non exercitationem!
+          <div className={styles.collapse} id="twitter">
+            <a className="twitter" href="#twitter">
+              Links
+            </a>
+            <div className={styles.content}>
+              <div className={styles.innercontent}>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
+                nobis iusto deleniti corporis alias quo a quam similique
+                cupiditate pariatur aliquid, omnis, officia dicta officiis
+                impedit nisi dolores ut, distinctio placeat. Magni dolores
+                perferendis ab laborum in neque, non exercitationem!
+              </div>
             </div>
           </div>
-        </div>
-        <div className={styles.collapse} id="dribbble">
-          <a className="dribbble" href="#dribbble">
-            Relevance
-          </a>
-          <div className={styles.content}>
-            <div className={styles.innercontent}>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
-              nobis iusto deleniti corporis alias quo a quam similique
-              cupiditate pariatur aliquid, omnis, officia dicta officiis impedit
-              nisi dolores ut, distinctio placeat. Magni dolores perferendis ab
-              laborum in neque, non exercitationem!
+          <div className={styles.collapse} id="dribbble">
+            <a className="dribbble" href="#dribbble">
+              Relevance
+            </a>
+            <div className={styles.content}>
+              <div className={styles.innercontent}>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
+                nobis iusto deleniti corporis alias quo a quam similique
+                cupiditate pariatur aliquid, omnis, officia dicta officiis
+                impedit nisi dolores ut, distinctio placeat. Magni dolores
+                perferendis ab laborum in neque, non exercitationem!
+              </div>
             </div>
           </div>
         </div>

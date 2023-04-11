@@ -36,7 +36,7 @@ const Semester = () => {
   const semesterID = router.query.semester;
   console.log(semesterID);
   return (
-    <div className="h-screen">
+    <div className="h-full">
       <div className={styles.body}>
         <h1 className="text-4xl text-gray-300 mt-8 mb-5 font-bold">
           Semester {semesterID}
