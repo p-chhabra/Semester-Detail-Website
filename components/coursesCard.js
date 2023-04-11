@@ -15,7 +15,9 @@ const CourseCard = (props) => {
           <Link href={`/${props.id}/${props.courseID}`}>
             <button className={styles.button}>View More</button>
           </Link>
-          <p className={styles.credits}>Credits : 4</p>
+          <p className={styles.credits}>
+            Credits : {props.credits ? props.credits : 4}
+          </p>
         </div>
       </div>
     </li>
