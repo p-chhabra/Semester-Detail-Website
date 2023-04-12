@@ -21,9 +21,9 @@ const Contact = () => {
   const submitHandler = (event) => {
     console.log(nameValue, emailValue, textValue);
 
-    nameRef.current.value = "";
-    emailRef.current.value = "";
-    textRef.current.value = "";
+    // nameRef.current.value = "";
+    // emailRef.current.value = "";
+    // textRef.current.value = "";
   };
 
   const nameChangeHandler = () => {
