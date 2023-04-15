@@ -17,7 +17,7 @@ It is really hard to retrieve any sort of information related to courses of a se
 
 ## **Framework Used**
 
-**NEXTJS** : Next.js is an open-source web development framework created by the private company Vercel providing React-based web applications with server-side rendering and static website generation.
+**NEXTJS** : [Next.js](https://nextjs.org/) is an open-source web development framework created by the private company Vercel providing React-based web applications with server-side rendering and static website generation.
 
 ## Frontend
 
@@ -26,7 +26,7 @@ The frontend is designed as a **SPA** (Single page application) with user friend
 
 ## Database
 
-A local **json** has been used to store information regarding courses of all semesters and mongoDB Atlas is used to store comments/reviews for every course.
+A local **json** has been used to store information regarding courses of all semesters and [MongoDB Atlas](https://www.mongodb.com/atlas/database) is used to store comments/reviews for every course.
 
 ## **PREVIEW**
 
