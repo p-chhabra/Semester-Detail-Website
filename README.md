@@ -11,7 +11,7 @@ Semester Detail Website is an online platform where a student can access the det
 - Hand written notes by previous batches
 - Recommended books and sources to study from
 
-## **Problem Faced by students**
+### **Problem Faced by students**
 
 It is really hard to retrieve any sort of information related to courses of a semester as students. Even the basic task of finding the syllabus of a desired course in a pdf is cumbersome task. Moreover there is no official repository for notes, sources, relevance, past grades etc for a every course for students to evaluate the importance and difficulty of a subject.
 
@@ -19,12 +19,12 @@ It is really hard to retrieve any sort of information related to courses of a se
 
 **NEXTJS** : [Next.js](https://nextjs.org/) is an open-source web development framework created by the private company Vercel providing React-based web applications with server-side rendering and static website generation.
 
-## Frontend
+### **Frontend**
 
 The frontend is designed as a **SPA** (Single page application) with user friendly UI and easy navigation.
 **Static site generation** with dynamic file based routes has been used to improve SEO and improve load times of the website.
 
-## Database
+### **Database**
 
 A local **json** has been used to store information regarding courses of all semesters and [MongoDB Atlas](https://www.mongodb.com/atlas/database) is used to store comments/reviews for every course.
 
