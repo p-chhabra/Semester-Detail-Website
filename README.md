@@ -44,7 +44,7 @@ A local **json** has been used to store information regarding courses of all sem
 Scroll down
 ![CourseDetail Page](/public//website-ss/courseDetail2.png)
 
-### **Home Page**
+### **Contact Page**
 
 ![Contact Page](/public//website-ss/contact.png)
 
