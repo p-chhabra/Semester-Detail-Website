@@ -803,6 +803,7 @@
 
         {
             "semID": 4,
+            "credits": 22,
             "meanSG": 8.456,
             "medianSG": 8.67,
             "maxSG": 9.95,

@@ -1,36 +1,67 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# **Semester Detail Website**
 
-## Getting Started
+## **About**
 
-First, run the development server:
+Semester Detail Website is an online platform where a student can access the details related to different courses of all semesters with comfort and ease. It contains information on various fronts for all courses in a user friendly and easy to navigate manner:
+
+- Syllabus of every course.
+- Past performance in the course by previous batches, i.e mean SGPI, median SGPI, highest SGPI etc;
+- Relevance of the course from the perspective of placements and competitive exams;
+- An open comment section for every course, where anyone can post information regarding that subject.
+- Hand written notes by previous batches
+- Recommended books and sources to study from
+
+## **Problem Faced by students**
+
+It is really hard to retrieve any sort of information related to courses of a semester as students. Even the basic task of finding the syllabus of a desired course in a pdf is cumbersome task. Moreover there is no official repository for notes, sources, relevance, past grades etc for a every course for students to evaluate the importance and difficulty of a subject.
+
+## **Framework Used**
+
+**NEXTJS** : Next.js is an open-source web development framework created by the private company Vercel providing React-based web applications with server-side rendering and static website generation.
+
+## Frontend
+
+The frontend is designed as a **SPA** (Single page application) with user friendly UI and easy navigation.
+**Static site generation** with dynamic file based routes has been used to improve SEO and improve load times of the website.
+
+## Database
+
+A local **json** has been used to store information regarding courses of all semesters and mongoDB Atlas is used to store comments/reviews for every course.
+
+## **PREVIEW**
+
+### **Home Page**
+
+![Home Page](/public//website-ss/home.png)
+
+### **Courses Page**
+
+![Courses Page](/public//website-ss/courses.png)
+
+### **Course Detail Page**
+
+![CourseDetail Page](/public//website-ss/courseDetail.png)
+![CourseDetail Page](/public//website-ss/courseDetail2.png)
+
+### **Home Page**
+
+![Contact Page](/public//website-ss/contact.png)
+
+## **How to run development server**
+
+To run this project on your local machine, you should have **version 18** or higher of **Nodejs** installed on your machine.
+
+### **Steps to run the project in your local environment :**
+
+- Git clone the [Semester Detail Website](https://github.com/p-chhabra/Semester-Detail-Website) repository to your local machine.
+- run the following command to install all the required dependencies for the project in the root directory of the project.
+
+```bash
+npm install
+```
+
+- to star the development server , run the following command
 
 ```bash
 npm run dev
-# or
-yarn dev
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
