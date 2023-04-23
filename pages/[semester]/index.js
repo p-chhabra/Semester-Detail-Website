@@ -53,6 +53,6 @@ export async function getStaticProps(context) {
   const params = context.params;
   const semID = params.semester;
   return {
-    props: { sem: semData.semesters[semID] },
+    props: { sem: semData.semesters[semID - 1] },
   };
 }
