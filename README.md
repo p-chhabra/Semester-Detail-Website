@@ -66,3 +66,5 @@ npm install
 ```bash
 npm run dev
 ```
+
+Visit live demo: https://sem-detail-app.vercel.app/
