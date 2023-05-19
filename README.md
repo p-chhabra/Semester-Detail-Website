@@ -1,4 +1,5 @@
 # **Semester Detail Website**
+
 (UNDER DEVELOPMENT)
 
 ## **About**
@@ -33,21 +34,21 @@ A local **json** has been used to store information regarding courses of all sem
 
 ### **Home Page**
 
-![Home Page](/public//website-ss/home.png)
+![Home Page](/public//website-ss/home.PNG)
 
 ### **Courses Page**
 
-![Courses Page](/public//website-ss/courses.png)
+![Courses Page](/public//website-ss/courses.PNG)
 
 ### **Course Detail Page**
 
-![CourseDetail Page](/public//website-ss/courseDetail.png)
+![CourseDetail Page](/public//website-ss/courseDetail.PNG)
 Scroll down
-![CourseDetail Page](/public//website-ss/courseDetail2.png)
+![CourseDetail Page](/public//website-ss/courseDetail2.PNG)
 
 ### **Contact Page**
 
-![Contact Page](/public//website-ss/contact.png)
+![Contact Page](/public//website-ss/contact.PNG)
 
 ## **How to run development server**
 
