@@ -33,6 +33,7 @@ const index = ({ semData }) => {
 
 export default index;
 
+//staticProps
 export async function getStaticProps() {
   return {
     props: { semData },
