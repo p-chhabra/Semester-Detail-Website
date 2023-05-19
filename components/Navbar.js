@@ -1,8 +1,12 @@
 import styles from "../styles/navbar.module.css";
 import Link from "next/link";
+import { signIn, signOut, useSession } from "next-auth/react";
 
 ///Navbar Component
 const Navbar = () => {
+  const { data: session } = useSession();
+  console.log(session);
+
   return (
     ///Wide Device Navbar
     <nav className="w-full flex justify-between items-center px-4 font-bold bg-[#000000] shadow-2xl shadow-[BB86FC]">
@@ -31,11 +35,21 @@ const Navbar = () => {
             <Link href="/contact">Contact</Link>
           </li>
         }
-        {
-          <li className="px-4 border-2 border-[#BB86FC] rounded-md p-1 hover:text-[#BB86FC] duration-500 text-sm my-2">
-            <Link href="/">SignIn</Link>
+        {session ? (
+          <li
+            onClick={() => signOut()}
+            className="px-4 border-2 border-[#BB86FC] rounded-md p-1 hover:text-[#BB86FC] duration-500 text-sm my-2"
+          >
+            <Link href={""}>SignOut</Link>
           </li>
-        }
+        ) : (
+          <li
+            onClick={() => signIn()}
+            className="px-4 border-2 border-[#BB86FC] rounded-md p-1 hover:text-[#BB86FC] duration-500 text-sm my-2"
+          >
+            <Link href={""}>SignIn</Link>
+          </li>
+        )}
       </ul>
     </nav>
   );
