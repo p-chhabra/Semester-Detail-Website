@@ -48,7 +48,7 @@ Scroll down
 
 ### **Contact Page**
 
-![Contact Page](public/website-ss/contact.PNG)
+![Contact Page](https://github.com/p-chhabra/Semester-Detail-Website/blob/58e1651f7c82ecc0291f8970264d4b17097cdb16/public/website-ss/contact.PNG)
 
 ## **How to run development server**
 
