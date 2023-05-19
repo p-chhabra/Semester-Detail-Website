@@ -1,5 +1,5 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
-import dbConnect from "../../lib/mongo";
+import dbConnect from "../../lib/mongodb";
 
 export default async function handler(req, res) {
   const params = req.params;
