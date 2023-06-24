@@ -40,21 +40,24 @@ const Navbar = () => {
   //storing in database
   useEffect(() => {
     if (user && user.displayName) {
-      alert.success("Sign In Successful!");
       const addUser = async () => {
-        const res2 = await setDoc(doc(db, "users", user.uid), {
-          name: user.displayName,
-          email: user.email,
-          uid: user.uid,
-          image: user.photoURL,
-          token: user.accessToken,
-          timeStamp: serverTimestamp(),
-        });
+        const res2 = await setDoc(
+          doc(db, "users", user.uid),
+          {
+            name: user.displayName,
+            email: user.email,
+            uid: user.uid,
+            image: user.photoURL,
+            token: user.accessToken,
+            timeStamp: serverTimestamp(),
+          },
+          { merge: true }
+        );
+        console.log(res2);
+        alert.success("Sign In Successful!");
         console.log(user.displayName);
       };
-
-      const q = query(collection(db, "users"), where("uid", "==", user.uid));
-      if (!q) addUser();
+      addUser();
     }
   }, [user]);
 

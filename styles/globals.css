@@ -126,7 +126,7 @@ html {
 }
 
 p {
-  font-color: #bb86fc;
+  font: #bb86fc;
 }
 .tab-label {
   display: flex;

@@ -3,6 +3,7 @@ import { useRouter } from "next/router";
 import Accordian from "../../../components/accordian";
 import styles from "../../../styles/course.module.css";
 import semData from "../../../data/syllabus.json";
+import CommentSection from "../../../components/CommentSection";
 
 const Course = ({ course }) => {
   const router = useRouter();
@@ -16,7 +17,7 @@ const Course = ({ course }) => {
       {<h1 className="h1">{course.name}</h1>}
       <h2 className="h2">Syllabus</h2>
       {unitArr && (
-        <div className="h-full">
+        <div className="h-full flex flex-col items-center justify-center">
           <div className="wrap">
             <div className="flex flex-row justify-center items-center">
               <div className="tabs">
@@ -104,7 +105,7 @@ const Course = ({ course }) => {
       )}
 
       {experiments && (
-        <>
+        <div className="flex flex-col items-center">
           <div className="flex flex-row justify-center">
             <div className="flex flex-col bg-[#736b6b38] w-[1000px] rounded-lg p-10">
               <h1 className="text-4xl mb-10">List of Experiments</h1>
@@ -139,8 +140,12 @@ const Course = ({ course }) => {
               </div>
             </div>
           </div>
-        </>
+        </div>
       )}
+
+      <div className="pb-20">
+        <CommentSection course={`/${semID}/${courseID}`}></CommentSection>
+      </div>
     </Fragment>
   );
 };
