@@ -1,11 +1,62 @@
 import styles from "../styles/navbar.module.css";
+import { useEffect } from "react";
 import Link from "next/link";
-import { signIn, signOut, useSession } from "next-auth/react";
+import { UserAuth } from "../modals/AuthContext";
+import {
+  doc,
+  setDoc,
+  serverTimestamp,
+  query,
+  where,
+  collection,
+} from "firebase/firestore";
+import { db } from "../lib/firebase";
+import { useAlert } from "react-alert";
 
 ///Navbar Component
 const Navbar = () => {
-  const { data: session } = useSession();
-  console.log(session);
+  const { user, logOut, googleSignIn } = UserAuth();
+  const alert = useAlert();
+
+  //sign in handler
+  const signInHandler = async () => {
+    try {
+      await googleSignIn();
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
+  //sign out handler
+  const signOutHandler = async () => {
+    try {
+      await logOut();
+      alert.success("Sign Out Successful!");
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
+  //storing in database
+  useEffect(() => {
+    if (user && user.displayName) {
+      alert.success("Sign In Successful!");
+      const addUser = async () => {
+        const res2 = await setDoc(doc(db, "users", user.uid), {
+          name: user.displayName,
+          email: user.email,
+          uid: user.uid,
+          image: user.photoURL,
+          token: user.accessToken,
+          timeStamp: serverTimestamp(),
+        });
+        console.log(user.displayName);
+      };
+
+      const q = query(collection(db, "users"), where("uid", "==", user.uid));
+      if (!q) addUser();
+    }
+  }, [user]);
 
   return (
     ///Wide Device Navbar
@@ -35,19 +86,19 @@ const Navbar = () => {
             <Link href="/contact">Contact</Link>
           </li>
         }
-        {session ? (
+        {user ? (
           <li
-            onClick={() => signOut()}
+            onClick={signOutHandler}
             className="px-4 border-2 border-[#BB86FC] rounded-md p-1 hover:text-[#BB86FC] duration-500 text-sm my-2"
           >
-            <Link href={""}>SignOut</Link>
+            SignOut
           </li>
         ) : (
           <li
-            onClick={() => signIn()}
+            onClick={signInHandler}
             className="px-4 border-2 border-[#BB86FC] rounded-md p-1 hover:text-[#BB86FC] duration-500 text-sm my-2"
           >
-            <Link href={""}>SignIn</Link>
+            SignIn
           </li>
         )}
       </ul>

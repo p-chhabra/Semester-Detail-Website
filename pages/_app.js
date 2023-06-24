@@ -1,16 +1,25 @@
 import "../styles/globals.css";
 import Layout from "../components/Layout";
-import { SessionProvider } from "next-auth/react";
 import { AnimatePresence } from "framer-motion";
+import { AuthContextProvider } from "../modals/AuthContext";
+import { positions, Provider } from "react-alert";
+import AlertTemplate from "react-alert-template-basic";
 
-export default function App({ Component, pageProps, session }) {
+const options = {
+  timeout: 5000,
+  position: positions.BOTTOM_CENTER,
+};
+
+export default function App({ Component, pageProps }) {
   return (
-    <SessionProvider session={session}>
-      <Layout>
-        <AnimatePresence mode="wait">
-          <Component {...pageProps} />
-        </AnimatePresence>
-      </Layout>
-    </SessionProvider>
+    <AuthContextProvider>
+      <Provider template={AlertTemplate} {...options}>
+        <Layout>
+          <AnimatePresence mode="wait">
+            <Component {...pageProps} />
+          </AnimatePresence>
+        </Layout>
+      </Provider>
+    </AuthContextProvider>
   );
 }
