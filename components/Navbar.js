@@ -53,9 +53,7 @@ const Navbar = () => {
           },
           { merge: true }
         );
-        console.log(res2);
         alert.success("Sign In Successful!");
-        console.log(user.displayName);
       };
       addUser();
     }

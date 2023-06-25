@@ -3,17 +3,15 @@ import { UserAuth } from "../modals/AuthContext";
 import Comment from "./Comment";
 import { useAlert } from "react-alert";
 import {
-  doc,
-  setDoc,
   serverTimestamp,
   query,
   where,
   collection,
   addDoc,
   getDocs,
-  getDoc,
 } from "firebase/firestore";
 import { db } from "../lib/firebase";
+import { comment } from "postcss";
 
 const CommentSection = ({ course }) => {
   const { user } = UserAuth();
@@ -22,11 +20,7 @@ const CommentSection = ({ course }) => {
   const [comments, setComments] = useState([]);
   const [newAdded, setNewAdded] = useState(false);
 
-  console.log(course);
-
-  //Initial Comments Fetch
-
-  //
+  //USE EFFECT
   useEffect(() => {
     const fetchData = async () => {
       let commentArray = [];
@@ -37,7 +31,11 @@ const CommentSection = ({ course }) => {
       const commentsList = await getDocs(q);
 
       commentsList.forEach((comment) => {
-        commentArray.push(comment.data());
+        const obj = {
+          commentID: comment.id,
+          ...comment.data(),
+        };
+        commentArray.push(obj);
       });
 
       setComments(commentArray);
@@ -45,6 +43,7 @@ const CommentSection = ({ course }) => {
     fetchData();
   }, [user, newAdded]);
 
+  //ADD COMMENT HANDLER FUNCTION
   const addCommentHandler = async (e) => {
     e.preventDefault();
     if (!user) {
@@ -83,6 +82,10 @@ const CommentSection = ({ course }) => {
               img={comment.img}
               time={comment.timeStamp}
               comment={comment.comment}
+              id={comment.uid}
+              commentID={comment.commentID}
+              setNewAdded={setNewAdded}
+              newAdded={newAdded}
               key={comment.timeStamp}
             />
           );
