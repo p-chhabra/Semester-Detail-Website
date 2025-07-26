@@ -36,7 +36,7 @@ const About = () => {
                 <div className={styles.containerinner}>
                   <Image
                     className={styles.circle}
-                    src="/im2.webp"
+                    src="/aditya.jpg"
                     width={500}
                     height={500}
                   ></Image>
